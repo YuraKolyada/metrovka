@@ -1,0 +1,65 @@
+
+$a-color: #152935;
+$max-w: 1280px;
+$width-content: 890px/1129px * 100%;
+$bg-color: rgba(90, 104, 114, .08);
+$bg-footer: rgba(90, 104, 114, .08);
+
+
+// icons variable
+
+$-shape-name: 'Shape';
+$-shape-x: 143px;
+$-shape-y: 66px;
+$-shape-offset-x: -143px;
+$-shape-offset-y: -66px;
+$-shape-width: 16px;
+$-shape-height: 16px;
+$-shape-total-width: 160px;
+$-shape-total-height: 143px;
+$-shape-image: 'icons.png';
+$-shape: (143px, 66px, -143px, -66px, 16px, 16px, 160px, 143px, '../../images/icons.png', 'Shape', );
+$checkmark-glyph-name: 'checkmark--glyph';
+$checkmark-glyph-x: 0px;
+$checkmark-glyph-y: 127px;
+$checkmark-glyph-offset-x: 0px;
+$checkmark-glyph-offset-y: -127px;
+$checkmark-glyph-width: 16px;
+$checkmark-glyph-height: 16px;
+$checkmark-glyph-total-width: 160px;
+$checkmark-glyph-total-height: 143px;
+$checkmark-glyph-image: 'icons.png';
+$checkmark-glyph: (0px, 127px, 0px, -127px, 16px, 16px, 160px, 143px, '../../images/icons.png', 'checkmark--glyph', );
+$logo-header-name: 'logo_header';
+$logo-header-x: 0px;
+$logo-header-y: 77px;
+$logo-header-offset-x: 0px;
+$logo-header-offset-y: -77px;
+$logo-header-width: 36px;
+$logo-header-height: 35px;
+$logo-header-total-width: 160px;
+$logo-header-total-height: 143px;
+$logo-header-image: 'icons.png';
+$logo-header: (0px, 77px, 0px, -77px, 36px, 35px, 160px, 143px, '../../images/icons.png', 'logo_header', );
+$menu-name: 'menu';
+$menu-x: 96px;
+$menu-y: 77px;
+$menu-offset-x: -96px;
+$menu-offset-y: -77px;
+$menu-width: 27px;
+$menu-height: 17px;
+$menu-total-width: 160px;
+$menu-total-height: 143px;
+$menu-image: 'icons.png';
+$menu: (96px, 77px, -96px, -77px, 27px, 17px, 160px, 143px, '../../images/icons.png', 'menu', );
+$telegram-name: 'telegram';
+$telegram-x: 0px;
+$telegram-y: 0px;
+$telegram-offset-x: 0px;
+$telegram-offset-y: 0px;
+$telegram-width: 62px;
+$telegram-height: 62px;
+$telegram-total-width: 160px;
+$telegram-total-height: 143px;
+$telegram-image: 'icons.png';
+$telegram: (0px, 0px, 0px, 0px, 62px, 62px, 160px, 143px, '../../images/icons.png', 'telegram', );

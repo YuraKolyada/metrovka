@@ -1,0 +1,228 @@
+
+
+$list-title-margin: 12px;
+$list-item-margin: 13px;
+
+//varibles
+$-instagram-name: 'Instagram';
+$-instagram-x: 143px;
+$-instagram-y: 0px;
+$-instagram-offset-x: -143px;
+$-instagram-offset-y: 0px;
+$-instagram-width: 17px;
+$-instagram-height: 18px;
+$-instagram-total-width: 160px;
+$-instagram-total-height: 143px;
+$-instagram-image: 'icons.png';
+$-instagram: (143px, 0px, -143px, 0px, 17px, 18px, 160px, 143px, '../../images/icons.png', 'Instagram', );
+
+$facebook-name: 'facebook';
+$facebook-x: 143px;
+$facebook-y: 33px;
+$facebook-offset-x: -143px;
+$facebook-offset-y: -33px;
+$facebook-width: 17px;
+$facebook-height: 18px;
+$facebook-total-width: 160px;
+$facebook-total-height: 143px;
+$facebook-image: 'icons.png';
+$facebook: (143px, 33px, -143px, -33px, 17px, 18px, 160px, 143px, '../../images/icons.png', 'facebook', );
+
+$logo-footer-name: 'logo_footer';
+$logo-footer-x: 77px;
+$logo-footer-y: 0px;
+$logo-footer-offset-x: -77px;
+$logo-footer-offset-y: 0px;
+$logo-footer-width: 51px;
+$logo-footer-height: 47px;
+$logo-footer-total-width: 160px;
+$logo-footer-total-height: 143px;
+$logo-footer-image: 'icons.png';
+$logo-footer: (77px, 0px, -77px, 0px, 51px, 47px, 160px, 143px, '../../images/icons.png', 'logo_footer', );
+$logo-header-name: 'logo_header';
+$logo-header-x: 0px;
+$logo-header-y: 77px;
+$logo-header-offset-x: 0px;
+$logo-header-offset-y: -77px;
+$logo-header-width: 36px;
+$logo-header-height: 35px;
+$logo-header-total-width: 160px;
+$logo-header-total-height: 143px;
+$logo-header-image: 'icons.png';
+$logo-header: (0px, 77px, 0px, -77px, 36px, 35px, 160px, 143px, '../../images/icons.png', 'logo_header', );
+
+$vk-name: 'vk';
+$vk-x: 51px;
+$vk-y: 77px;
+$vk-offset-x: -51px;
+$vk-offset-y: -77px;
+$vk-width: 30px;
+$vk-height: 20px;
+$vk-total-width: 160px;
+$vk-total-height: 143px;
+$vk-image: 'icons.png';
+$vk: (51px, 77px, -55px, -77px, 22px, 13px, 160px, 143px, '../../images/icons.png', 'vk', );
+$spritesheet-width: 160px;
+// mixin
+
+// icons mixins
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+  display: inline-block;
+}
+
+// style
+.footer {
+	max-width: $max-w;
+	width: $width-content;
+	margin: 0 auto;
+	background: $bg-footer;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 23px;
+	& > * {
+		flex-basis: 202px;
+	}
+
+}
+
+.contacts-list__social{
+	display: inline-flex;
+	&_#{$-instagram-name} {
+		@include sprite($-instagram);
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&_#{$vk-name} {
+		@include sprite($vk);
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&_#{$facebook-name} {
+		@include sprite($facebook);
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&-item {
+		margin-right: 16px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.footer__logo {
+	display: block;
+	text-align: center;
+	flex: 1 100%;
+	margin-top: 60px;
+	&_icon {
+		@include sprite($logo-footer);
+	}
+}
+
+@mixin list($margin) {
+	&__title {
+		margin-bottom: $list-title-margin;
+		font-size: 16px;
+		line-height: 2;
+		color: $a-color; 
+	}
+	&__item {
+		margin-bottom: $margin;
+		font-size: 13px;
+		line-height: (20/13);
+		&:last-child {
+			margin-bottom: 0;
+		} 
+	}
+
+	&__wrap {
+		max-width: 168px;
+	}
+}
+
+.partnerships-list {
+	@include list($list-item-margin);
+}
+
+.contacts-list {
+	font-weight: 400;
+	color: $a-color;
+	&__title {
+		margin-bottom: $list-title-margin;
+		font-size: 16px;
+		line-height: 2; 
+	}
+
+	&__address {
+		margin-bottom: 4px;
+	}
+
+	&__city {
+		font-size: 11px;
+		line-height: 20px;
+		margin-bottom: $list-item-margin;
+	}
+	&__btn {
+		display: block;
+	}
+	&__wrap {
+		max-width: 168px;
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	&__social {
+		margin-bottom: $list-item-margin;
+		display: inline-flex;
+		line-height: 0;
+		align-items: center;
+	}
+
+	&__email {
+		font-family: 'Opens Sans';
+		display: block;
+		margin-bottom: $list-item-margin;
+	}
+}
+
+.find_more-list {
+	@include list($list-item-margin);
+}
+
+.company-list {
+	@include list($list-item-margin);
+}
+
+
+

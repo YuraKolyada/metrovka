@@ -6,20 +6,360 @@
 	<link rel="stylesheet" href="./../css/homepage/style-home.css">
 </head>
 <body>
-
-<header class="header">
-	<nav class="navigation">
-		<ul class="navigation__items">
-			<li class="navigation__item">1</li>
-			<li class="navigation__item">2</li>
-			<li class="navigation__item">3</li>
-			<li class="navigation__item">4</li>
+	<div class="container-search_home">
+		<section class="search-home">
+			<header class="header">
+	<nav class="header_navigation">
+		<ul class="header_navigation__items">
+			<li class="header_navigation__item">Аренда</li>
+			<li class="header_navigation__item">Продажа</li>
+			<li class="header_navigation__item">Посуточно</li>
+			<li class="header_navigation__item">
+				<div class="header_navigation__item_open">
+					<span class="header_navigation__circle"></span>
+					<span class="header_navigation__circle"></span>
+					<span class="header_navigation__circle"></span>
+				</div>
+				<span class="header_navigation_other">Еще</span>
+			</li>
 		</ul>
 	</nav>
+	<div class="header__right-menu">
+		<a href="#" class="header__btn-replace-ad">Разместить объявление</a>
+		<a href="" class="header__btn-sign-in">Войти</a>
+	</div>
 </header>
+			<h1 class="search-home__title">Поиск недвижимости в Украине</h1>
+			<form class="search-home__info">
+				<div class="search-home__city">
+					<p class="search-home__label">Выберите город</p>
+					<select class="search-home__city__select">
+						<option selected class="search-home__city_option">Киев</option>
+						<option class="search-home__city_option">Харьков</option>
+						<option class="search-home__city_option">Львов</option>
+					</select>
+				</div>
+				<div class="search-home__rooms">
+					<p class="search-home__label">Кол-во комнат</p>
+					<ul class="search-home__rooms">
+						<li class="search-home__room">1</li>
+						<li class="search-home__room">2</li>
+						<li class="search-home__room">3</li>
+						<li class="search-home__room">4</li>
+						<li class="search-home__room">5+</li>
+					</ul>
+				</div>
+				<button class="search-home__btn">Перейти к поиску</button>
+			</form>
+		</section>
+	</div>
 
+	<div class="container-content">
+		<section class="filter-home">
+			<div class="filter-home__date">
+				<h2 class="filter-home__title">Недвижимость возле метро</h2>
+				<ul class="filter-home__items">
+					<li class="filter-home__item">Квартиры</li>
+					<li class="filter-home__item">Дома</li>
+					<li class="filter-home__item">Офисы</li>
+				</ul>
+				<select class="filter-home__metro__select">
+					<option selected class="filter-home__metro_option">Политехнический институт</option>
+					<option class="filter-home__metro_option">Шулявская</option>
+					<option class="filter-home__metro_option">Вокзальная</option>
+				</select>
+				<button class="search-home__btn"> Показать результаты поиска </button>
+			</div>
+			<div class="filter-home__photo"><img src="../images/metro.png" alt=""></div>
+		</section>
+		<section class="best-home">
+			<h1 class="best-home__title">Лучшие предложения в Киеве</h1>
+			<div class="best-home__items">
+				<div class="best-home__item">
+					<div class="best-home__slider">
+						<div class="best-home__slider_photo">
+							<img src="../images/homees-01.png" alt="home" class="best-home__photo">
+							<div class="best-home__sircles">
+								<div class="best-home__sircle"></div>
+								<div class="best-home__sircle"></div>
+								<div class="best-home__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="best-home__price">7 800 грн</p>
+					<span class="best-home__rooms">2 комн.</span>
+					<span class="best-home__square">30 кв.м.</span>
+					<p class="best-home__metro">Политехнический институт</p>
+				</div>
+				<div class="best-home__item">
+					<div class="best-home__slider">
+						<div class="best-home__slider_photo">
+							<img src="../images/homees-01.png" alt="home" class="best-home__photo">
+							<div class="best-home__sircles">
+								<div class="best-home__sircle"></div>
+								<div class="best-home__sircle"></div>
+								<div class="best-home__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="best-home__price">10 200 грн</p>
+					<span class="best-home__rooms">2 комн.</span>
+					<span class="best-home__square">30 кв.м.</span>
+					<p class="best-home__metro">Политехнический институт</p>
+				</div>
+				<div class="best-home__item">
+					<div class="best-home__slider">
+						<div class="best-home__slider_photo">
+							<img src="../images/homees-01.png" alt="home" class="best-home__photo">
+							<div class="best-home__sircles">
+								<div class="best-home__sircle"></div>
+								<div class="best-home__sircle"></div>
+								<div class="best-home__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="best-home__price">6 900 грн</p>
+					<span class="best-home__rooms">2 комн.</span>
+					<span class="best-home__square">30 кв.м.</span>
+					<p class="best-home__metro">Политехнический институт</p>
+				</div>
+				<div class="best-home__item">
+					<div class="best-home__slider">
+						<div class="best-home__slider_photo">
+							<img src="../images/homees-01.png" alt="home" class="best-home__photo">
+							<div class="best-home__sircles">
+								<div class="best-home__sircle"></div>
+								<div class="best-home__sircle"></div>
+								<div class="best-home__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="best-home__price">9 000 грн</p>
+					<span class="best-home__rooms">2 комн.</span>
+					<span class="best-home__square">30 кв.м.</span>
+					<p class="best-home__metro">Политехнический институт</p>
+				</div>
+			</div>
+			<h2 class="best-home__price-offers">Смотреть лучшие ценовые предложения</h2>
+		</section>
+		<section class="last-ads">
+			<h1 class="last-ads__title">Лучшие предложения в Киеве</h1>
+			<ul class="last-ads__list">
+				<li class="last-ads__list_option">Квартиры</li>
+				<li class="last-ads__list_option">Дома</li>
+				<li class="last-ads__list_option">Офисы</li>
+			</ul>
+			<div class="last-ads__items">
+				<div class="last-ads__item">
+					<div class="last-ads__slider">
+						<div class="last-ads__slider_photo">
+							<img src="../images/rooms_second.png" alt="rooms" class="last-ads__photo">
+							<div class="last-ads__sircles">
+								<div class="last-ads__sircle"></div>
+								<div class="last-ads__sircle"></div>
+								<div class="last-ads__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="last-ads__price">11 800 грн</p>
+					<span class="last-ads__check"></span>
+					<span class="last-ads__rooms">2 комн.</span>
+					<span class="last-ads__square">48 кв.м.</span>
+					<p class="last-ads__metro">Политехнический институт</p>
+				</div>
+				<div class="last-ads__item">
+					<div class="last-ads__slider">
+						<div class="last-ads__slider_photo">
+							<img src="../images/rooms_first.png" alt="home" class="last-ads__photo">
+							<div class="last-ads__sircles">
+								<div class="last-ads__sircle"></div>
+								<div class="last-ads__sircle"></div>
+								<div class="last-ads__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="last-ads__price">15 000 грн</p>
+					<span class="last-ads__check"></span>
+					<span class="last-ads__rooms">3 комн.</span>
+					<span class="last-ads__square">100 кв.м.</span>
+					<p class="last-ads__metro">Шулявская</p>
+				</div>
+				<div class="last-ads__item">
+					<div class="last-ads__slider">
+						<div class="last-ads__slider_photo">
+							<img src="../images/rooms_shird.png" alt="home" class="last-ads__photo">
+							<div class="last-ads__sircles">
+								<div class="last-ads__sircle"></div>
+								<div class="last-ads__sircle"></div>
+								<div class="last-ads__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="last-ads__price">11 800 грн</p>
+					<span class="last-ads__check"></span>
+					<span class="last-ads__check"></span>
+					<span class="last-ads__rooms">1 комн.</span>
+					<span class="last-ads__square">30 кв.м.</span>
+					<p class="last-ads__metro">Контрактовая площадь</p>
+				</div>
+				<div class="last-ads__item">
+					<div class="last-ads__slider">
+						<div class="last-ads__slider_photo">
+							<img src="../images/homees-01.png" alt="home" class="last-ads__photo">
+							<div class="last-ads__sircles">
+								<div class="last-ads__sircle"></div>
+								<div class="last-ads__sircle"></div>
+								<div class="last-ads__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="last-ads__price">7 000 грн</p>
+					<span class="last-ads__check"></span>
+					<span class="last-ads__rooms">2 комн.</span>
+					<span class="last-ads__square">40 кв.м.</span>
+					<p class="last-ads__metro">просп. Победы, 18А</p>
+				</div>
+				
+			</div>
+			<h2 class="last-ads__offers">Смотреть самые свежие объявления</h2>
+		</section>
+		<section class="social">
+			<h1 class="social__title">Общайтесь в Telegram</h1>
+			<p class="social__text">Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых обьявлениях, общайтесь без ограничений. </p>
+			<div class="social__list_items">
+				<span class="social__list_item">Поиск недвижимости</span>
+				<span class="social__list_item">Общение с клиентами</span>
+			</div>
+			<div class="social__container">
+				<img src="../images/phone-telegram.png" alt="phone-telegram" class="social__phone">
+				<div class="social__info">
+					<span class="social__info__image"></span>
+					<h3 class="social__info__title">Telegram</h3>
+					<h3 class="social__info__title-list">Metrovka Bot</h3>
+					<ol class="social__info__list">
+						<li class="social__info__item">	1. 	Собирайте аналитику по объектам</li>
+						<li class="social__info__item">	2. 	Получайте подсказки по эффективному продвижению объявлений</li>
+						<li class="social__info__item">	3. 	Общайтесь с клиентами через специальный канал телекоммуникации</li>
+					</ol>
+					<a href="#" class="social__info__btn">Присоединиться в Telegram</a>
+				</div>
+			</div>
+			<div class="social__slides">
+				<div class="social__slide"></div>
+				<div class="social__slide"></div>
+			</div>
+		</section>
 
+		<section class="blogs">
+			<h1 class="blogs__title">
+				Блог Metrovka
+			</h1>
+			<p class="blogs__text">Хитрости, приемы, советы, фото и видео – все о том как продать, купить, сдать в аренду или арендовать недвижимость. </p>
+			<div class="blogs__items">
+				<div class="blogs__item">
+					<div class="blogs__slider">
+						<div class="blogs__slider_photo">
+							<img src="../images/public_photo.png" alt="home" class="last-ads__photo">
+							<div class="blogs__sircles">
+								<div class="blogs__sircle"></div>
+								<div class="blogs__sircle"></div>
+								<div class="blogs__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="blogs__item__tag">Лайфхак</p>
+					<h3 class="blogs__item__title">Киевляне могут оплатить коммуналку через Facebook…</h3>
+					<span class="blogs__item__author">Татьяна Малыняк</span>
+					<span class="blogs__item__time">5 мин чтения</span>
+				</div>
+				<div class="blogs__item">
+					<div class="blogs__slider">
+						<div class="blogs__slider_photo">
+							<img src="../images/rooms2.png" alt="home" class="last-ads__photo">
+							<div class="blogs__sircles">
+								<div class="blogs__sircle"></div>
+								<div class="blogs__sircle"></div>
+								<div class="blogs__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="blogs__item__tag">Совет Metrovka</p>
+					<h3 class="blogs__item__title">ТОП-5 самых дешевых квартир Киева</h3>
+					<span class="blogs__item__author">Татьяна Малыняк</span>
+					<span class="blogs__item__time">4 мин чтения</span>
+				</div>
+				<div class="blogs__item">
+					<div class="blogs__slider">
+						<div class="blogs__slider_photo">
+							<img src="../images/rooms1.png" alt="home" class="last-ads__photo">
+							<div class="blogs__sircles">
+								<div class="blogs__sircle"></div>
+								<div class="blogs__sircle"></div>
+								<div class="blogs__sircle"></div>
+							</div>
+						</div>
+					</div>
+					<p class="blogs__item__tag">Технологии</p>
+					<h3 class="blogs__item__title">Смарт квартиры: цены, предложения и законность</h3>
+					<span class="blogs__item__author">Татьяна Малыняк</span>
+					<span class="blogs__item__time">2 мин чтения</span>
+				</div>
+			</div>
+			<h2 class="blogs__page">Перейти на страницу блога</h2>
+		</section>
 
+		<footer class="footer">
+	<ul class="company-list">
+		<li class="company-list__title">Metrovka</li>
+		<li class="company-list__items">
+			<ul class="company-list__wrap">
+				<li class="company-list__item"><a href="" class="company-list__link">О компании</a></li>
+				<li class="company-list__item"><a href="" class="company-list__link">Пресса о нас</a></li>
+				<li class="company-list__item"><a href="" class="company-list__link">Пользовательское соглашение</a></li>
+				<li class="company-list__item"><a href="" class="company-list__link">Карта сайта</a></li>
+				<li class="company-list__item"><a href="" class="company-list__link">Помощь</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="partnerships-list">
+		<li class="partnerships-list__title">Партнерство</li>
+		<li class="partnerships-list__items">
+			<ul class="partnerships-list__wrap">
+				<li class="partnerships-list__item"><a href="" class="partnerships-list__link">Как разместить обьявление</a></li>
+				<li class="partnerships-list__item"><a href="" class="partnerships-list__link">Инструменты продвижения</a></li>
+				<li class="partnerships-list__item"><a href="" class="partnerships-list__link">Правила заполнения объявлений</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="find_more-list">
+		<li class="find_more-list__title">Узнайте больше</li>
+		<li class="find_more-list__items">
+			<ul class="find_more-list__wrap">
+				<li class="find_more-list__item"><a href="#" class="find_more-list__link">Бонусная программа Bonus+</a></li>
+				<li class="find_more-list__item"><a href="#" class="find_more-list__link">Telegram Metrovka Bot</a></li>
+				<li class="find_more-list__item"><a href="#" class="find_more-list__link">Как работает поиск</a></li>
+				<li class="find_more-list__item"><a href="#" class="find_more-list__link">Как пользоваться избранным</a></li>
+			</ul>
+		</li>
+	</ul>
+	<div class="contacts-list">
+		<p class="contacts-list__title">Контакты</p>
+		<div class="contacts-list__wrap">
+			<ul class="contacts-list__social">
+				<li class="contacts-list__social-item"><i class="contacts-list__social_facebook"></i></li>
+				<li class="contacts-list__social-item"><i class="contacts-list__social_vk"></i></li>
+				<li class="contacts-list__social-item"><i class="contacts-list__social_Instagram"></i></li>
+			</ul>
+			<address class="contacts-list__address">ул. Жилянская, 37</address>
+			<address class="contacts-list__city">Киев, 01033</address>
+			<a href="mailto:info@metrovka.ua" class="contacts-list__email">info@metrovka.ua</a>
+			<a href="#" class="contacts-list__btn">Оставить заявку</a>
+		</div>
+	</div>
+	<a href="#" class="footer__logo"><i class="footer__logo_icon"></i></a>
+</footer>
+	</div>
+	
 
 </body>
 </html>
