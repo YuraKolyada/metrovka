@@ -8,16 +8,17 @@ var gulp = require('gulp'),
 
 
 
-gulp.task('server',['html', 'sass'], function(){
+gulp.task('server',['html', 'sass', 'js'], function(){
 	browser.init({
 		server: {
 			baseDir: './prod',
-			index: 'html/homepage.html'
+			index: 'html/listing.html'
 		}
 	});
     gulp.watch('./src/sass/**/**/*.scss', ['sass']);
     gulp.watch('./src/image/bg/*.png', ['imagemin']);
     gulp.watch('./src/html/*.html', ['html']);
+    gulp.watch('./src/js/*.js', ['js']);
     gulp.watch('./prod/html/*.html').on('change', browser.reload);
 });
 
@@ -33,16 +34,16 @@ gulp.task('sass', function(){
 });
 
 gulp.task('sprite', function(){
-	var spriteData = gulp.src('src/image/icon/*.png')
+	var spriteData = gulp.src('src/image/icons_list/*.png')
 		.pipe(spritesmith({
-			imgName: 'icons.png',
-			cssName: 'icons.scss',
+			imgName: 'icons_list.png',
+			cssName: 'icons_list.scss',
 			padding: 15
 		}));
 	return spriteData.pipe(gulp.dest('src/image/bg/'));
 });
 
-gulp.task('imagemin', ['sprite'], function(){
+gulp.task('imagemin', function(){
 	gulp.src('./src/image/bg/*.png')
 		.pipe(imagemin())
 		.pipe(gulp.dest('prod/images/'))
@@ -56,4 +57,9 @@ gulp.task('html', function(){
 		.pipe(browser.stream());
 })
 
+gulp.task('js', function(){
+	gulp.src('./src/js/*.js')
+		.pipe(gulp.dest('prod/js/'))
+		.pipe(browser.stream());
+})
 gulp.task('default', ['server']);

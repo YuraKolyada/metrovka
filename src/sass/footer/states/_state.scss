@@ -1,0 +1,19 @@
+.contacts-list__social {
+	&-#{$-instagram-name}:hover {
+		opacity: 1;
+	}
+
+	&-#{$vk-name}:hover {
+		opacity: 1;
+	}
+
+	&-#{$facebook-name}:hover {
+		opacity: 1;
+	}
+}
+
+.footer__logo {
+	&_icon:hover {
+		opacity: 0.75;
+	}
+}
