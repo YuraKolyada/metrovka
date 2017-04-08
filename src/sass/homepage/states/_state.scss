@@ -1,0 +1,31 @@
+.header_navigation {
+	&__item:hover {
+		border-bottom: 2px solid #fff;
+		width: 100%;
+		transition: all .1s;
+	}
+}
+
+.filter-home {
+	&__item:hover {
+		border-bottom: 2px solid $border-open;
+		width: 100%;
+		transition: all .1s;
+	}
+}
+
+.last-ads {
+	&__item-list:hover {
+		border-bottom: 2px solid $border-open;
+		width: 100%;
+		transition: all .1s;
+	}
+}
+
+.social {
+	&__item-list:hover {
+		border-bottom: 2px solid $border-open;
+		width: 100%;
+		transition: all .1s;
+	}
+}

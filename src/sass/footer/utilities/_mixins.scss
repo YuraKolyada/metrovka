@@ -1,0 +1,40 @@
+
+@mixin list($margin) {
+  &__title {
+    margin-bottom: $list-title-margin;
+    font-size: 16px;
+    line-height: 2;
+    color: $a-color; 
+  }
+  &__item {
+    margin-bottom: $margin;
+    font-size: 13px;
+    line-height: (20/13);
+    &:last-child {
+      margin-bottom: 0;
+    } 
+  }
+
+  &__wrap {
+    max-width: 168px;
+  }
+}
+
+
+@mixin btn_green($width, $height: 40px){
+  width: $width;
+  height: $height;
+  background: $border-open;
+  color: #fff;
+  font-size: .875rem;
+  line-height: 40px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    border: 1px solid $border-select;
+    background: $bg-hover;
+    color: #fff;
+    line-height: 38px;
+  }
+}

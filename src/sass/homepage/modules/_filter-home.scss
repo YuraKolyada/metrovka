@@ -1,0 +1,38 @@
+.filter-home {
+	padding: 3.5vw;
+	display: flex;
+    justify-content: space-between;
+	@include dropdown('metro', 313px, .75rem);
+
+	&__btn {
+		@include btn_green(320px);
+	}
+
+	&__date {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__title {
+		@extend %title;
+	}
+
+	&__item {
+		@extend %filter;
+		&-active {
+			@extend %filter-active;
+		}
+	}
+
+	&__metro__option-selected:before {
+		display: inline-flex;
+		content: '';
+		width: 8px;
+		height: 8px;
+		border-radius: 13px;
+		background: $red-status;
+		margin-right: 12px;
+		transform: translateY(-2px); 
+	}
+}

@@ -1,0 +1,101 @@
+.social {
+	padding: 40px 0;
+	background: $bg-section;
+	
+	&__title {
+		@extend %title;
+		text-align: center;
+	}
+
+	&__wrap {
+		width: 60%;
+		margin: 0 auto;
+		padding-bottom: 40px;
+	}
+
+	&__text {
+		text-align: center;
+		font-size: .875rem;
+		line-height: 1.25rem;
+		padding: 20px 25px;
+	}
+
+	&__item-list {
+		@extend %filter;
+		&--active {
+			@extend %filter-active;
+		}
+	} 
+	
+	&__list-wrap {
+		display: flex;
+		justify-content: center;
+	}
+	
+	&__phone {
+		width: (282px/890px)*100%;
+		min-width: 282px;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		padding-bottom: 23px;
+	}
+
+	&__info {
+		background: #fff;
+		padding: 4.7vw 3.55vw;
+		align-self: center;
+		width: (435px/890px)*100%;
+		margin-left: (90px/890px)*100%;
+
+		&__title {
+			display: inline-block;
+			padding-left: 20px;
+			@extend %title;
+			transform: translateY(-75%);
+		}
+
+		&__title-list {
+			@extend %title;
+			padding: 24px 0 20px;
+		}
+
+		&__item {
+			font-size: .875rem;
+			line-height: 1.25;
+			padding-bottom: 12px;
+			text-indent: 3px;
+		} 
+		&__list {
+			padding-bottom: 20px;
+		}
+
+		&__btn {
+			@include btn_green(320px);
+			display: block;
+		}
+	} 
+
+	&__slides {
+		display: flex;
+		justify-content: center;
+	}
+
+	input[type="checkbox"] + &__slide {
+		width: 14px;
+		height: 14px;
+		display: inline-block;
+		border: 2px solid $border-open;
+		border-radius: 50%;
+		margin-right: 12px;
+		cursor: pointer;
+	}
+
+	input[type="checkbox"]:checked + &__slide {
+		background: $border-open;
+	}
+
+}

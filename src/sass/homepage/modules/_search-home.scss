@@ -1,0 +1,42 @@
+
+
+
+.search-home {
+	&__info {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__rooms {
+		display: flex;
+		margin-right: 15px;
+	}
+
+	&__title {
+		font-size: 2rem;
+		line-height: 1.215;
+		color: #fff;
+		font-weight: 400;
+		letter-spacing: -1px;
+		padding-bottom: 41px;
+	}
+	@include circles(#fff, #fff, #fff, $a-color);
+	@include dropdown('city');
+	color: #fff;
+
+	&__label {
+		font-size: .875rem;
+		line-height: 1.215;
+		margin-bottom: 9px;
+	}
+
+	&__city {
+		flex-basis: 344px;
+	} 
+	
+	&__btn {
+		align-self: flex-end;
+		@include btn_white(201px);
+	} 
+}

@@ -1,6 +1,17 @@
 section {
-	max-width: 1280px;
-	margin: 0 10%;
-	width: 80%;
-	padding: 10px;
+	max-width: $max-w;
+	width: $width-content;
+	margin: 0 auto 20px;
+	background: #fff;
+}
+
+
+.header {
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding: 18px 0 60px;
+	}
 }

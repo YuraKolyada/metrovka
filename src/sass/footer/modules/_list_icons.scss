@@ -1,0 +1,21 @@
+.contacts-list__social{
+	display: inline-flex;
+	&-#{$-instagram-name} {
+		@include sprite($-instagram);
+		opacity: 0.5;
+	}
+	&-#{$vk-name} {
+		@include sprite($vk);
+		opacity: 0.5;
+	}
+	&-#{$facebook-name} {
+		@include sprite($facebook);
+		opacity: 0.5;
+	}
+	&-item {
+		margin-right: 16px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
