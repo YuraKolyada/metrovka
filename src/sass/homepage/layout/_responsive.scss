@@ -1,0 +1,93 @@
+.container-search-home {
+	@media screen and (max-width: 1120px) {
+		& > * {
+			width: 100%;
+			padding-right:16px;
+			padding-left:16px;
+		}
+	}
+}
+
+section {
+	@media screen and (max-width: 1120px) {
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 1120px) {
+	.filter-home {
+		padding: 20px 16px;
+	}
+
+	.best-home {
+		&__wrap {
+			padding: 20px 0 20px 16px;
+		}
+	}
+
+	.last-ads {
+		&__wrap {
+			padding: 20px 0 20px 16px;
+		}
+	}
+
+}
+
+
+@media screen and (max-width: 860px) {
+	.best-home {
+		&__items {
+			width: 100%;
+			overflow: hidden;
+
+		}
+		&__item {
+			width: 215px;
+
+		}
+	}
+
+	.last-ads {
+		&__items {
+			width: 100%;
+			overflow: hidden;
+
+		}
+		&__item {
+			width: 215px;
+
+		}
+	}
+
+	.search-home {
+		&__info {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__btn {
+			align-self: flex-start;
+			margin-bottom: 27px;
+		}
+		&__city {
+			flex-basis:0;
+			min-width: 312px; 
+		}
+
+		&__city__select {
+			width: 70%;
+		}
+		&__rooms-home {
+			padding: 36px 0;
+			align-self: flex-start;
+		}
+	}
+
+	.header__wrap {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+}
+
+

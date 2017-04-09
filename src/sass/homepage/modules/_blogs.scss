@@ -16,15 +16,6 @@
 		color: $a-color;
 	}
 
-	&__items {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__item {
-		flex-basis: ($width-blog/844px)*100%;
-		min-width: $width-blog;
-	}
 
 	&__wrap {
 		padding: 23px;

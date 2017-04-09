@@ -4,16 +4,6 @@
 		text-align: center;
 	}
 
-	&__items {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__item {
-		flex-basis: ($width-slide/844px)*100%;
-		min-width: 202px;
-	}
-
 	&__wrap {
 		padding: 23px;
 	}
@@ -115,20 +105,6 @@
 		padding: 6px;
 	}
 	
-	&__wrap-list {
-		display: flex;
-    	justify-content: center;
-	}
-
-	&__list {
-		display: inline-flex;
-		justify-content: center;
-		padding: 24px 0;
-		& > * {
-			flex: 0px;
-		}
-	}
-
 	&__item-list {
 		@extend %filter;
 		&-active {

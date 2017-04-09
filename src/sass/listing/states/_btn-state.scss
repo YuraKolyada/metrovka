@@ -1,0 +1,12 @@
+.filter__result {
+	&-btn-phone:hover {
+		box-shadow: 1px 1px 9px #2C3D47;
+	}
+	&-btn-social:hover {
+		box-shadow: 1px 1px 9px #2C3D47;
+	}
+
+	&-btn:hover {
+		opacity: 0.75;
+	}
+}

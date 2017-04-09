@@ -1,20 +1,11 @@
-.container-search-home {
-	background: url(./../../images/homepage.png) no-repeat;
-	background-size: cover;
-	min-height: 301px;
-	height: auto;
 
-    & > * {
-    	margin: 0 auto;
-		max-width: $max-w;
-		width: $width-content;
-    }
-}
-
-
-.container-content {
+.container {
 	width: 100%;
 	background: $bg-color; 
-	padding-top: 20px;
-	color: $a-color;
+}
+
+.filter__results-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }

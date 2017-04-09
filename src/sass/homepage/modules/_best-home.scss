@@ -6,17 +6,6 @@
 		letter-spacing: -0.6px;
 	}
 
-	&__items {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__item {
-		flex-basis: ($width-slide/844px)*100%;
-		min-width: 202px;
-		padding-top: 3px;
-	}
-
 	&__wrap {
 		padding: 20px 23px;
 	}

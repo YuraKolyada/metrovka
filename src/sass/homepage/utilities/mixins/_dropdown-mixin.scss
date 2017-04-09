@@ -1,0 +1,49 @@
+@mixin dropdown($filter-name, $width: 100%, $size: .875rem){
+  &__#{$filter-name}__select {
+    height: 40px;
+    width: $width;
+    border: 2px solid $border-select;
+    position: relative;
+    font-size: $size;
+    line-height: 36px;
+    background: #fff;
+    color: $a-color;
+    cursor: pointer;
+    &.open {
+      border: 2px solid $border-open;
+      border-bottom: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    }
+  }
+  &__#{$filter-name}__option {
+    height: 40px;
+    padding-left: 16px; 
+    &-selected {
+      height: 36px;
+      padding-left: 16px;
+      &:after {
+        display: inline-block;
+        content: '';
+        border: 5px solid transparent;
+        border-top: 5px solid #30AE63;
+        position: absolute;
+        right: 15px;
+        top: calc(#{'50% - 2.5px'});
+      } 
+    }
+  }
+  &__#{$filter-name}__options-wrap {
+    position: absolute;
+    display: none;
+    background: #fff;
+    width: calc(#{'100% + 4px'});
+    left: -2px;
+    &.open {
+      border: 2px solid $border-open;
+      border-top: 2px solid $border-select;
+      display: block;
+      box-shadow: 0 4px 8px rgba(0,0,0,.1);
+      z-index: 100;
+    } 
+  }
+}

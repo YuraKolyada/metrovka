@@ -1,0 +1,35 @@
+@mixin btn_white($width){
+  width: $width;
+  height: 40px;
+  background: #fff;
+  border: 2px solid $border-open;
+  color: $border-open;
+  font-size: .875rem;
+  line-height: 36px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    border-radius: 0;
+    background: $border-open;
+    color: #fff;
+  }
+}
+
+@mixin btn_green($width, $height: 40px){
+  width: $width;
+  height: $height;
+  background: $border-open;
+  color: #fff;
+  font-size: .875rem;
+  line-height: 40px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    border: 1px solid $border-select;
+    background: $bg-hover;
+    color: #fff;
+    line-height: 38px;
+  }
+}

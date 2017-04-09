@@ -1,16 +1,4 @@
 .header_navigation {
-	display: inline-flex;
-	align-items: center;
-	color: #fff;
-	&__items {
-		display: inline-flex;
-		flex-wrap: wrap;
-		font-size: .875rem;
-		line-height: 20px;
-		& > * {
-			flex: 0px;
-		}
-	}
 	&__link {
 		display: block;
 		padding: 0 $padding-nav 10px $padding-nav;
@@ -50,33 +38,3 @@
 	}
 }
 
-
-%btn {
-	color: #fff;
-	font-size: .875rem;;
-	line-height: (17.09/14);
-	display: inline-flex;
-	align-items: center;
-	height: 40px;
-	vertical-align: bottom;
-}
-
-.header {
-
-	&__btn-sign-in {
-		@extend %btn; 
-		padding: 0 $padding-nav;
-	}
-
-	&__btn-replace-ad {
-		@extend %btn;
-		background: rgba(255,255,255,.1);
-		margin-right: 7px;
-    	width: 236px;
-		&:before {
-			content: '';
-			@include sprite($-shape);
-			margin: 0 12px 0 15px;
-		}
-	}
-}

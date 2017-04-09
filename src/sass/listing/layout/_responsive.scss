@@ -1,0 +1,42 @@
+
+.header {
+	@media screen and (min-width:1640px){
+		&__wrap {
+			width: 890px;
+			margin-left: 41px;
+			margin-right: 12px;
+		}
+	}
+}
+
+.footer {
+	@media screen and (min-width:1640px){
+		width: 890px;
+		margin-left: 41px;
+		margin-right: 12px;
+
+	}
+}
+
+.filter {
+	@media screen and (min-width:1640px){
+		margin-left: 41px;
+		margin-right: 12px;
+		width: calc(#{'100% - 53px'});
+		max-width: 100%; 
+
+		&__results-map {
+			display: block;
+			width: calc(#{'100% - 903px'});
+		}
+
+		&__results {
+			width: 890px;
+		}
+
+		&__details { 
+			width: 890px;
+		}
+	}
+}
+
