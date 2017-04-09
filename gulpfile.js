@@ -4,7 +4,8 @@ var gulp = require('gulp'),
 	spritesmith = require('gulp.spritesmith'),
 	autoprefix = require('gulp-autoprefixer'),
 	htmlIncluder = require('gulp-htmlincluder'),
-	imagemin = require('gulp-imagemin');
+	imagemin = require('gulp-imagemin'),
+	concat = require('gulp-concat');
 
 
 
@@ -12,10 +13,10 @@ gulp.task('server',['html', 'sass', 'js'], function(){
 	browser.init({
 		server: {
 			baseDir: './prod',
-			index: 'html/listing.html'
+			index: 'html/homepage.html'
 		}
 	});
-    gulp.watch('./src/sass/**/**/*.scss', ['sass']);
+    gulp.watch('./src/sass/**/**/**/*.scss', ['sass']);
     gulp.watch('./src/image/bg/*.png', ['imagemin']);
     gulp.watch('./src/html/*.html', ['html']);
     gulp.watch('./src/js/*.js', ['js']);
@@ -23,7 +24,7 @@ gulp.task('server',['html', 'sass', 'js'], function(){
 });
 
 gulp.task('sass', function(){
-	gulp.src('./src/sass/**/**/*.scss')
+	gulp.src('./src/sass/**/**/**/*.scss')
 		.pipe(sass())
 		.pipe(autoprefix({
 			browsers: ['last 4 versions'],

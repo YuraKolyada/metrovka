@@ -1,0 +1,14 @@
+.modal{
+	&__option:hover {
+		background: $border-open;
+		transition: background .25s;
+	}
+	&__option-selected:hover {
+		cursor: pointer;
+	}
+
+	&__option-selected:focus::after  {
+        border-top: none;
+        border-bottom: 5px solid #30AE63;
+    }
+}

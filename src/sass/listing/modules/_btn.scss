@@ -1,0 +1,59 @@
+
+.filter__result{
+	&-btn {
+		width: 148px;
+		height: 35px;
+		font-size: 13px;
+		text-align: center;
+		line-height: 35px;
+		cursor: pointer;
+		display: block;
+		border-radius: 4px;
+
+		&:after {
+			content: "";
+			@include sprite($-group-3);
+			margin-left: 17px;
+			transform: translateY(25%);
+		}
+
+		&--high {
+			background: $btn-high;
+			color: $color-high;
+		}
+		&--good {
+			background: $btn-good;
+			color: $color-good;
+		}
+	}
+
+	&-btn-phone {
+		height: 32px;
+		width: 70px;
+		display: block;
+		border-radius: 3px;
+		border: 2px solid $border-phone;
+		text-align: center;
+    	line-height: 32px;
+
+	}
+
+	&-icon-phone {
+		@include sprite($-shape);
+	}
+
+	&-btn-social {
+		height: 32px;
+		width: 70px;
+		display: block;
+		border-radius: 3px;
+		border: 2px solid $border-mes;
+		text-align: center;
+    	line-height: 32px;
+
+	}
+
+	&-icon-social {
+		@include sprite($-facebook-messenger);
+	}
+}

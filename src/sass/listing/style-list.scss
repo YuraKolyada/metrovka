@@ -1,8 +1,10 @@
 
 @import 'utilities/index';
 @import 'base/index';
-@import 'layout/index';
 @import 'modules/index';
-@import 'states/index';
-@import './../footer/footer-style';
 @import './../header/header-style';
+@import './../footer/footer-style';
+@import './../modal/modal-style';
+@import 'layout/index';
+@import 'states/index';
+

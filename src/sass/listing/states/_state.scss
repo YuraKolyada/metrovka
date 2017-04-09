@@ -5,3 +5,13 @@
 		transition: all .1s;
 	}
 }
+
+.filter__sorting {
+	&-currency:hover {
+		cursor: pointer;
+	}
+
+	&-results:hover {
+		@extend .filter__sorting-currency:hover;
+	}
+}

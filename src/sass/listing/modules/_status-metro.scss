@@ -1,0 +1,17 @@
+.filter__result {
+	&-metro-status {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		display: inline-flex;
+		transform: translateY(-25%);
+		&--green {
+			background: $green-status;
+		}
+
+		&--blue {
+			background: $blue-status;
+		}
+	}
+}
+

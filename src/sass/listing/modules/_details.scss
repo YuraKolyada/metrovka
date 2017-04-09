@@ -1,0 +1,44 @@
+.filter {
+	&__tags {
+		color: $color-tags;
+		font-size: .875rem;
+		line-height: $line-17;
+		padding-top: 20px; 
+	}
+
+	&__title {
+		color: $a-color;
+		font-size: 1.25rem;
+		line-height: 2rem;
+		padding: 12px 0 20px; 
+	}
+
+	&__result-range {
+		display: flex;
+		justify-content: space-between;
+		color: $color-range;
+		font-size: .875rem;
+		line-height: $line-17;
+		padding-bottom: 20px;  
+	}
+
+	&__sorting {
+		&-currency:after {
+			border: 5px solid transparent;
+			border-top: 5px solid $color-range;
+			content: '';
+			display: inline-flex;
+			transform: translateY(-25%);
+			margin-left: 15px; 
+		}
+
+		&-results:after {
+			@extend .filter__sorting-currency:after;
+			margin-left: 20px;
+		}
+
+		&-results {
+			padding-right: 22px;
+		}
+	}
+}

@@ -1,16 +1,8 @@
 .social {
-	padding: 40px 0;
-	background: $bg-section;
 	
 	&__title {
 		@extend %title;
 		text-align: center;
-	}
-
-	&__wrap {
-		width: 60%;
-		margin: 0 auto;
-		padding-bottom: 40px;
 	}
 
 	&__text {
@@ -27,23 +19,6 @@
 		}
 	} 
 	
-	&__list-wrap {
-		display: flex;
-		justify-content: center;
-	}
-	
-	&__phone {
-		width: (282px/890px)*100%;
-		min-width: 282px;
-	}
-
-	&__container {
-		display: flex;
-		justify-content: flex-end;
-		flex-wrap: wrap;
-		padding-bottom: 23px;
-	}
-
 	&__info {
 		background: #fff;
 		padding: 4.7vw 3.55vw;
@@ -79,11 +54,6 @@
 		}
 	} 
 
-	&__slides {
-		display: flex;
-		justify-content: center;
-	}
-
 	input[type="checkbox"] + &__slide {
 		width: 14px;
 		height: 14px;
@@ -92,10 +62,6 @@
 		border-radius: 50%;
 		margin-right: 12px;
 		cursor: pointer;
-	}
-
-	input[type="checkbox"]:checked + &__slide {
-		background: $border-open;
 	}
 
 }

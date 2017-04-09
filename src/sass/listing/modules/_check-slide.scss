@@ -1,0 +1,22 @@
+
+.filter__result {
+	&-slides {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 17px;
+	}
+
+	input[type="checkbox"] + &-slide {
+		width: 8px;
+		height: 8px;
+		display: inline-block;
+		background: $border-color;
+		border-radius: 50%;
+		margin-right: 12px;
+		cursor: pointer;
+	}
+
+	input[type="checkbox"]:checked + &-slide {
+		background: $bg-slide;
+	}
+}
