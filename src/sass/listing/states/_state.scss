@@ -1,0 +1,17 @@
+.header_navigation {
+	&__item:hover {
+		border-bottom: 2px solid #fff;
+		width: 100%;
+		transition: all .1s;
+	}
+}
+
+.filter__sorting {
+	&-currency:hover {
+		cursor: pointer;
+	}
+
+	&-results:hover {
+		@extend .filter__sorting-currency:hover;
+	}
+}

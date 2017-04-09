@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Metrovka</title>
+	<link rel="stylesheet" href="./../css/listing/style-list.css">
+</head>
+<body>
+	<div class="modal">
+	<span class="modal__close"></span>
+	<div class="modal__line"></div>
+	<div class="modal__wrap">
+		<div class="modal__info">
+			<h2 class="modal__title">Оставить заявку</h2>
+			<p class="modal__text">
+				Нет времени искать по сайту?
+				Заполняй критерии поиска и получай акутальные объявления как только они появляются на Metrovka.
+			</p>
+		</div>
+		<form class="modal__submit-app">
+			<div class="modal__list">
+				<label for="modal__item-list-region" class="modal__item-list modal__item-list--active">Район</label>
+				<input id="modal__item-list-region" type="radio" value="flat" checked>
+				<label for="modal__item-list-metro" class="modal__item-list">Метро</label>
+				<input id="modal__item-list-metro" type="radio" value="metro">
+			</div>
+			<div class="modal__select">
+				<div class="modal__option-selected" data-value="Голосеевский" tabindex="1">Голосеевский</div>
+				<div class="modal__options-wrap  ">
+					<div class="modal__option" data-value="Соломянский">Соломянский</div>
+					<div class="modal__option" data-value="Львов">Львовський</div>
+				</div>
+			</div>
+			<p class="modal__label">Кол-во комнат</p>
+			<ul class="modal__rooms">
+				<li class="modal__room modal__room_active" data-value ="1">1</li>
+				<li class="modal__room modal__room_active" data-value ="2">2</li>
+				<li class="modal__room"
+				data-value ="3">3</li>
+				<li class="modal__room"
+				data-value ="4">4</li>
+				<li class="modal__room"
+				data-value ="5+">5+</li>
+			</ul>
+			<input type="text" placeholder="Как вас зовут?" class="modal__name" name="name">
+			<input type="email" placeholder="Email" class="modal__email" name="email">
+			<button class="modal__btn">Оставить заявку</button>
+		</form>
+	</div>
+</div>
+<div class="modal__overlay"></div>
+	<div class="container">
+		<header class="header">
+	<div class="header__wrap">
+		<nav class="header_navigation">
+			<div class="header_navigation__icon"><i class="header_navigation__icon-logo"></i></div>
+			<ul class="header_navigation__items"> 
+				<li class="header_navigation__item header_navigation__item-active">	
+					<a href="#" class="header_navigation__link">Аренда</a>
+				</li>
+				<li class="header_navigation__item">
+					<a href="#" class="header_navigation__link">Продажа</a>
+				</li>
+				<li class="header_navigation__item">
+					<a href="#" class="header_navigation__link">Посуточно</a>
+				</li>
+				<li class="header_navigation__item">
+					<div class="header_navigation__item_open">
+						<span class="header_navigation__circle"></span>
+						<span class="header_navigation__circle"></span>
+						<span class="header_navigation__circle"></span>
+					</div>
+					<span class="header_navigation__other">Еще</span>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__right-menu">
+			<a href="#" class="header__btn-replace-ad">Разместить объявление</a>
+			<a href="" class="header__btn-sign-in">Войти</a>
+		</div>
+	</div>
+</header>
+
+		<div class="filter">
+			<div class="filter__details">
+				<p class="filter__tags">Долгосрочная аренда  /  Квартиры  /  Киев</p>
+				<h2 class="filter__title">
+					Долгосрочная аренда квартир в Киеве
+				</h2>
+				<div class="filter__result-range">
+					<span class="filter__number">3 варианта размещения</span>
+					<div class="filter__sorting">
+						<span class="filter__sorting-results">Сортировать</span>
+						<span class="filter__sorting-currency">Валюта</span>
+					</div>
+				</div>
+			</div>
+			<div class="filter__results-wrap">
+				<div class="filter__results">
+					<div class="filter__result-flat">
+						<div class="filter__result-description-wrap">
+							<img src="../images/flat.png" alt="flat1" class="filter__result-photo">
+							<div class="filter__result-description">
+								<p class="filter__result-address">2 комн., Дарницкий р-н, Пчелки 2б</p>
+								<div class="filter__result-place">
+									<span class="filter__result-metro-status filter__result-metro-status--green"></span>
+									<span class="filter__result-place-metro">Позняки</span>
+									<span class="filter__result-place-time">30 мин пешком</span>
+								</div>
+								<span class="filter__result-features">Особенности</span>
+								<div class="filter__result-size">120 кв. м. •  этаж 1 из 5</div>
+								<p class="filter__result-text">
+									Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
+								</p>
+								<div class="filter__result-slides">
+									<input type="checkbox" id="filter__result-slide-first" name="slide1" checked/>
+									<label for="filter__result-slide-first"
+									class = "filter__result-slide"></label>
+									<input type="checkbox" id="filter__result-slide-second" name="slide1"/>
+									<label for="filter__result-slide-second" class = "filter__result-slide"></label>
+								</div>
+							</div>
+						</div>
+						<div class="filter__result-finance">
+							<p class="filter__result-price">11 600 грн</p>
+							<div class="filter__result-change">
+								<span class="filter__result-price-usd">460$</span>
+								<span class="filter__result-price-cource">курс</span>
+							</div>
+							<a href="#" class="filter__result-btn filter__result-btn--high">Высокая цена</a>
+							<div class="filter__result-contacts">
+								<a href="" class="filter__result-btn-phone"><i class="filter__result-icon-phone"></i> </a>
+								<a href="" class="filter__result-btn-social"><i class="filter__result-icon-social"></i></a>
+							</div>
+							<div class="filter__results-other">
+								<span class="filter__results-section">След. раздел</span>
+								<i class="filter__results-section-icon"></i>
+								<p class="filter__results-section-name">Инфраструктура</p>
+							</div>
+						</div>
+					</div>
+					<div class="filter__result-flat">
+						<div class="filter__result-description-wrap">
+							<img src="../images/flat3.png" alt="flat2" class="filter__result-photo">
+							<div class="filter__result-description">
+								<p class="filter__result-address">2 комн., Оболонский р-н, Полярная 20</p>
+								<div class="filter__result-place">
+									<span class="filter__result-metro-status filter__result-metro-status--blue"></span>
+									<span class="filter__result-place-metro">Героев Днепра</span>
+									<span class="filter__result-place-time">10 мин. пешком</span>
+								</div>
+								<span class="filter__result-features">Особенности</span>
+								<div class="filter__result-size">78 кв. м. • этаж 2 из 5 </div>
+								<p class="filter__result-text">
+									Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица.
+								</p>
+								<div class="filter__result-slides">
+									<input type="checkbox" id="filter__result-slide-first" name="slide1" checked/>
+									<label for="filter__result-slide-first"
+									class = "filter__result-slide"></label>
+									<input type="checkbox" id="filter__result-slide-second" name="slide1"/>
+									<label for="filter__result-slide-second" class = "filter__result-slide"></label>
+								</div>
+							</div>
+						</div>
+						<div class="filter__result-finance">
+							<p class="filter__result-price">10 500 грн</p>
+							<div class="filter__result-change">
+								<span class="filter__result-price-usd">420$</span>
+								<span class="filter__result-price-cource">курс</span>
+							</div>
+							<a href="#" class="filter__result-btn filter__result-btn--good">Высокая цена</a>
+							<div class="filter__result-contacts">
+								<a href="" class="filter__result-btn-phone"><i class="filter__result-icon-phone"></i> </a>
+								<a href="" class="filter__result-btn-social"><i class="filter__result-icon-social"></i></a>
+							</div>
+							<div class="filter__results-other">
+								<span class="filter__results-section">След. раздел</span>
+								<i class="filter__results-section-icon"></i>
+								<p class="filter__results-section-name">Инфраструктура</p>
+							</div>
+						</div>
+					</div>
+					<div class="filter__result-flat">
+						<div class="filter__result-description-wrap">
+							<img src="../images/flat2.png" alt="flat3" class="filter__result-photo">
+							<div class="filter__result-description">
+								<p class="filter__result-address">2 комн., Оболонский р-н, Полярная 20</p>
+								<div class="filter__result-place">
+									<span class="filter__result-metro-status filter__result-metro-status--blue"></span>
+									<span class="filter__result-place-metro">Героев Днепра</span>
+									<span class="filter__result-place-time">10 мин. пешком</span>
+								</div>
+								<span class="filter__result-features">Особенности</span>
+								<div class="filter__result-size">78 кв. м. • этаж 2 из 5 </div>
+								<p class="filter__result-text">
+									Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица.
+								</p>
+								<div class="filter__result-slides">
+									<input type="checkbox" id="filter__result-slide-first" name="slide1" checked/>
+									<label for="filter__result-slide-first"
+									class = "filter__result-slide"></label>
+									<input type="checkbox" id="filter__result-slide-second" name="slide1"/>
+									<label for="filter__result-slide-second" class = "filter__result-slide"></label>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter__result-finance">
+							<p class="filter__result-price">10 500 грн</p>
+							<div class="filter__result-change">
+								<span class="filter__result-price-usd">420$</span>
+								<span class="filter__result-price-cource">курс</span>
+							</div>
+							<a href="#" class="filter__result-btn filter__result-btn--good">Высокая цена</a>
+							<div class="filter__result-contacts">
+								<a href="" class="filter__result-btn-phone"><i class="filter__result-icon-phone"></i> </a>
+								<a href="" class="filter__result-btn-social"><i class="filter__result-icon-social"></i></a>
+							</div>
+							<div class="filter__results-other">
+								<span class="filter__results-section">След. раздел</span>
+								<i class="filter__results-section-icon"></i>
+								<p class="filter__results-section-name">Инфраструктура</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="filter__results-map"><img src="../images/maps.png" alt="" class="filter__results-map-photo"></div>
+			</div>
+		</div>
+		<footer class="footer">
+	<ul class="company-list">
+		<li class="company-list__title">Metrovka</li>
+		<li class="company-list__items">
+			<ul class="company-list__wrap">
+				<li class="company-list__item"><a href="" class="company-list__link">О компании</a></li>
+				<li class="company-list__item"><a href="" class="company-list__link">Пресса о нас</a></li>
+				<li class="company-list__item"><a href="" class="company-list__link">Пользовательское соглашение</a></li>
+				<li class="company-list__item"><a href="" class="company-list__link">Карта сайта</a></li>
+				<li class="company-list__item"><a href="" class="company-list__link">Помощь</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="partnerships-list">
+		<li class="partnerships-list__title">Партнерство</li>
+		<li class="partnerships-list__items">
+			<ul class="partnerships-list__wrap">
+				<li class="partnerships-list__item"><a href="" class="partnerships-list__link">Как разместить обьявление</a></li>
+				<li class="partnerships-list__item"><a href="" class="partnerships-list__link">Инструменты продвижения</a></li>
+				<li class="partnerships-list__item"><a href="" class="partnerships-list__link">Правила заполнения объявлений</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="find_more-list">
+		<li class="find_more-list__title">Узнайте больше</li>
+		<li class="find_more-list__items">
+			<ul class="find_more-list__wrap">
+				<li class="find_more-list__item"><a href="#" class="find_more-list__link">Бонусная программа Bonus+</a></li>
+				<li class="find_more-list__item"><a href="#" class="find_more-list__link">Telegram Metrovka Bot</a></li>
+				<li class="find_more-list__item"><a href="#" class="find_more-list__link">Как работает поиск</a></li>
+				<li class="find_more-list__item"><a href="#" class="find_more-list__link">Как пользоваться избранным</a></li>
+			</ul>
+		</li>
+	</ul>
+	<div class="contacts-list">
+		<p class="contacts-list__title">Контакты</p>
+		<div class="contacts-list__wrap">
+			<ul class="contacts-list__social">
+				<li class="contacts-list__social-item"><i class="contacts-list__social-facebook"></i></li>
+				<li class="contacts-list__social-item"><i class="contacts-list__social-vk"></i></li>
+				<li class="contacts-list__social-item"><i class="contacts-list__social-Instagram"></i></li>
+			</ul>
+			<address class="contacts-list__address">ул. Жилянская, 37</address>
+			<address class="contacts-list__city">Киев, 01033</address>
+			<a href="mailto:info@metrovka.ua" class="contacts-list__email">info@metrovka.ua</a>
+			<a href="#" class="contacts-list__btn">Оставить заявку</a>
+		</div>
+	</div>
+	<a href="#" class="footer__logo"><i class="footer__logo_icon"></i></a>
+</footer>
+
+	</div>
+	<script type="text/javascript" src='./../js/dropdown.js'></script>
+	<script type="text/javascript" src='./../js/modal.js'></script>
+</body>
+</html>

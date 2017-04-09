@@ -1,0 +1,57 @@
+.contacts-list {
+	font-weight: 400;
+	color: $a-color;
+	&__title {
+		margin-bottom: $list-title-margin;
+		font-size: 16px;
+		line-height: 2; 
+	}
+
+	&__address {
+		margin-bottom: 4px;
+	}
+
+	&__city {
+		font-size: 11px;
+		line-height: 20px;
+		margin-bottom: $list-item-margin;
+	}
+	&__btn {
+		display: block;
+	}
+	&__wrap {
+		max-width: 168px;
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	&__social {
+		margin-bottom: $list-item-margin;
+		display: inline-flex;
+		line-height: 0;
+		align-items: center;
+	}
+
+	&__email {
+		font-family: 'Opens Sans';
+		display: block;
+		margin-bottom: $list-item-margin;
+	}
+
+	&__btn {
+		@include btn_green(162px);
+	} 
+}
+
+
+.partnerships-list {
+	@include list($list-item-margin);
+}
+
+.find_more-list {
+	@include list($list-item-margin);
+}
+
+.company-list {
+	@include list($list-item-margin);
+}

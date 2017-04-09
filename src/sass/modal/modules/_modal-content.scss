@@ -1,0 +1,56 @@
+.modal {
+	@include dropdown();
+	@include circles($border-select, $border-open, $a-color, #fff);
+
+	&__title {
+		@extend %title;
+		padding-bottom: 20px;
+	}
+	&__text {
+		font-size: .875rem;
+		line-height: 1.25rem;
+	}
+
+	&__item-list {
+		@extend %filter;
+		&--active {
+			@extend %filter-active;
+		}
+	}
+
+	&__list {
+		padding-bottom: 23px;
+	}
+	
+	&__btn {
+		@include btn_green(100%);
+		display: block;
+	}
+	&__rooms {
+		display: inline-flex;
+		margin-bottom: 40px;
+	}
+
+	&__label {
+		font-size: 14px;
+		line-height: 17px;
+		padding: 20px 0 10px;
+	}
+	&__name {
+		border: 2px solid #DFE3E6;
+		border-radius: 2px;
+		height: 40px;
+		width: 100%;
+		padding-left: 16px;
+		font-size: 12px;
+		color: #5A6872;
+	}
+
+	&__email {
+		@extend .modal__name;
+		margin: 20px 0 40px;
+	}
+
+	
+}
+

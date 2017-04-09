@@ -1,0 +1,12 @@
+%filter {
+  font-size: .875rem;
+  line-height: 1.0625rem;
+  padding: 0 $padding-nav 8px $padding-nav;
+  cursor: pointer;
+  margin-right: 35px;
+}
+
+%filter-active {
+  width: 100%;
+  border-bottom: 2px solid $border-open;
+}

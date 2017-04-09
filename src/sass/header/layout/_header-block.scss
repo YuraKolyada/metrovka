@@ -1,0 +1,17 @@
+.header {
+	width: 100%;
+	background: $bg-header;
+	padding: 10px 0;
+	&__wrap {
+		margin: 0 auto;
+		max-width: $max-w;
+		width: $width-content;
+		min-height: 40px;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+}
+

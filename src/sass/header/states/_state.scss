@@ -1,0 +1,11 @@
+.header_navigation {
+	&__item:hover {
+		border-bottom: 2px solid #fff;
+		width: 100%;
+		transition: all .25s;
+	}
+}
+
+.header__btn-replace-ad:hover {
+	opacity: 0.6;
+}

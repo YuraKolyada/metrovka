@@ -1,0 +1,87 @@
+
+
+// icons mixins
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+  display: inline-block;
+}
+
+
+
+
+
+@mixin btn_white($width){
+  width: $width;
+  height: 40px;
+  background: #fff;
+  border: 2px solid $border-open;
+  color: $border-open;
+  font-size: .875rem;
+  line-height: 36px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    border-radius: 0;
+    background: $border-open;
+    color: #fff;
+  }
+}
+
+@mixin btn_green($width, $height: 40px){
+  width: $width;
+  height: $height;
+  background: $border-open;
+  color: #fff;
+  font-size: .875rem;
+  line-height: 40px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    border: 1px solid $border-select;
+    background: $bg-hover;
+    color: #fff;
+    line-height: 38px;
+  }
+}
+
+%title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+%filter {
+  font-size: .875rem;
+  line-height: 1.0625rem;
+  padding: 0 $padding-nav 8px $padding-nav;
+  cursor: pointer;
+  margin-right: 35px;
+}
+
+%filter-active {
+  width: 100%;
+  border-bottom: 2px solid $border-open;
+}

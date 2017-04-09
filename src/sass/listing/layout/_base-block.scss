@@ -1,0 +1,41 @@
+.filter {
+	max-width: $max-w;
+	width: $width-content;
+	margin: 0 auto 20px;
+
+	&__results-map {
+		display: none;
+	}
+
+	&__result-flat {
+		display: flex;
+		justify-content: space-between;
+		background: #fff;
+		margin-bottom: 12px; 
+		padding: 12px 20px;
+	}
+
+	&__result-description-wrap {
+		display: flex;
+	}
+
+	&__result-photo {
+		flex-basis: 242px;
+		margin-right: 20px;
+		align-self: flex-start;
+	}
+
+	&__result-description {
+		flex-basis: 320px;
+	}
+
+	&__result-finance {
+		text-align: right;
+	}
+
+	&__result-contacts {
+		display: flex;
+		justify-content: space-between;
+		margin: 16px 0 32px;
+	}
+}

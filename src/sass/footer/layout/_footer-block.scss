@@ -1,0 +1,15 @@
+.footer {
+	max-width: $max-w;
+	width: $width-content;
+	margin: 0 auto;
+	background: $bg-section;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 23px;
+	& > * {
+		flex-basis: 202px;
+	}
+
+}
+

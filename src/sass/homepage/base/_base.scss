@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+i {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: $a-color;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+*:focus {
+	outline: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}

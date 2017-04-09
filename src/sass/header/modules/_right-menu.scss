@@ -1,0 +1,27 @@
+%btn {
+	color: #fff;
+	font-size: 14px;
+	line-height: (17.09/14);
+	display: inline-flex;
+	align-items: center;
+	height: 40px;
+	vertical-align: bottom;
+}
+.header {
+
+	&__btn-sign-in {
+		@extend %btn; 
+	}
+
+	&__btn-replace-ad {
+		@extend %btn;
+		background: rgba(255,255,255,.1);
+		padding-right: 30px; 
+		margin-right: 16px; 
+		&:before {
+			content: '';
+			@include sprite($-shape);
+			margin: 0 12px 0 13px;
+		}
+	}
+}

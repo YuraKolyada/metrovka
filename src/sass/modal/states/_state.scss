@@ -1,0 +1,14 @@
+
+.modal {
+	&__item-list:hover {
+		border-bottom: 2px solid $border-open;
+		width: 100%;
+		transition: all .1s;
+	}
+
+	&__overlay:hover {
+		opacity: 0.7;
+		transition: all .5s;
+		cursor: pointer;
+	} 
+}

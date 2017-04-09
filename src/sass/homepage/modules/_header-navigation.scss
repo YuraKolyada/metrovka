@@ -1,0 +1,40 @@
+.header_navigation {
+	&__link {
+		display: block;
+		padding: 0 $padding-nav 10px $padding-nav;
+		color: #fff;
+	}
+
+	&__item-active {
+		border-bottom: 2px solid #fff;
+	}
+
+	&__icon-logo {
+		@include sprite($logo-header);
+		margin-right: 40px;
+	}
+
+	&__item {
+		margin-right: 3.1vw;
+		cursor: pointer;
+		&:last-child {
+			margin-right: 0;
+			flex-basis: 60px;
+		}
+		&_open {
+			display: inline-flex;
+			vertical-align: middle;
+		}
+	}
+	&__circle {
+		width: 4px;
+		height: 4px;
+		background: #fff;
+		border-radius: 50%;
+		margin-left: 4px;  
+	}
+	&__other {
+		margin-left: 7px;
+	}
+}
+
