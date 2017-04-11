@@ -1,5 +1,5 @@
 .blogs {
-	margin-bottom: 40px;
+	margin-bottom: 66px;
 
 	&__title {
 		@extend %title;
@@ -18,7 +18,7 @@
 
 
 	&__wrap {
-		padding: 23px;
+		padding: 23px 23px 7px 23px;
 	}
 
 	&__slider_photo {
@@ -93,9 +93,8 @@
 		line-height: 1.5;
 		text-align: center;
 		border-top: 2px solid $border-color;
-		padding: 6px;
-		margin-top: 40px;
 		cursor: pointer;
+		padding: 6px 0;
 	}
 	
 }
