@@ -1,0 +1,40 @@
+.footer {
+	@media screen and (max-width: 860px) {
+		width: 100%;
+		padding: 0;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+
+.contacts-list {
+	@media screen and (max-width: 860px) {
+		&__wrap {
+			margin: 0 auto;
+		}
+	}
+}
+
+.company-list {
+	@media screen and (max-width: 860px) {
+		&__wrap {
+			margin: 0 auto;
+		}
+	}
+}
+
+.partnerships-list {
+	@media screen and (max-width: 860px) {
+		&__wrap {
+			margin: 0 auto;		}
+	}
+}
+
+.find_more-list {
+	@media screen and (max-width: 860px) {
+		&__wrap {
+			margin: 0 auto;
+		}
+	}
+}

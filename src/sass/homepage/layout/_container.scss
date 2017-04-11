@@ -36,17 +36,6 @@
 }
 
 .last-ads {
-
-	&__items {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__item {
-		flex-basis: ($width-slide/844px)*100%;
-		min-width: 202px;
-	}
-
 	&__wrap-list {
 		display: flex;
     	justify-content: center;
@@ -63,6 +52,28 @@
 	
 }
 
+
+.slider {
+	display: flex;
+	height: 272px;
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		width: 100%;
+		min-width: 844px;
+	}
+
+	&__item {
+		flex-basis: ($width-slide/844px)*100%;
+		min-width: 202px;
+		padding-top: 3px;
+	}
+}
 
 .social {
 	padding: 40px 0;
@@ -105,27 +116,17 @@
 	}
 }
 
-.best-home {
-	&__items {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__item {
-		flex-basis: ($width-slide/844px)*100%;
-		min-width: 202px;
-		padding-top: 3px;
-	}
-}
-
 .blogs {
 	&__items {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	&__item {
 		flex-basis: ($width-blog/844px)*100%;
 		min-width: $width-blog;
+		margin-bottom: 20px;
+		padding-bottom: 13px;
 	}
 }
