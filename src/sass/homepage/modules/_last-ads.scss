@@ -1,101 +1,13 @@
 .last-ads {
+	&__wrap {
+		padding: 20px 23px;
+	}
+
 	&__title {
 		@extend %title;
 		text-align: center;
 	}
-
-	&__wrap {
-		padding: 23px;
-	}
-
-	&__slider_photo {
-		position: relative;
-	}
-
-	&__sircles {
-		position: absolute;
-		right: 16px;
-		top: 14px;
-		cursor: pointer;
-	}
-
-	&__sircle {
-		width: 4px;
-		height: 4px;
-		border-radius: 50%;
-		margin-top: 4px;
-		background: #fff;
-
-	}
-
-	&__info-price {
-		padding: 20px 0 4px;
-	}
-
-	&__price {
-		font-size: 1rem;
-		line-height: 1.5;
-		padding-right: 20px;
-	}
-
-	&__checked {
-		@include sprite($checkmark-glyph);
-		transform: translateY(2px);
-	}
-
-	&__rooms {
-		color: $color-rooms;
-		font-size: .75rem;
-		line-height: 1.25;
-	}
-
-	&__square {
-		@extend .best-home__rooms;
-		&:before {
-			content: '';
-			height: 2px;
-			width: 2px;
-			display: inline-flex;
-			border-radius: 50%;
-			background: $color-rooms;
-			transform: translateY(-5px);
-    		align-items: center;
-    		margin: 0 5px;
-		}
-	}
-
-	&__info-metro {
-		padding: 12px 0 20px;
-	}
-
-	&__lines-metro {
-		width: 8px;
-		height: 8px;
-		border-radius: 13px;
-		display: inline-flex;
-		transform: translateY(-25%);
-		&.red {
-			background: $red-status;
-		}
-
-		&.blue {
-			background: $blue-status;
-		}
-
-		&.none {
-			display: none;
-			& + span {
-				padding: 0;
-			} 
-		}
-	}
-
-	&__metro {
-		padding: 0 12px;
-		font-size: .75rem;
-		line-height: 1.25;
-	}
-
+	
 	&__offers {
 		display: block;
 		font-size: 1rem;
