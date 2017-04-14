@@ -1,10 +1,11 @@
 <header class="header">
+	<div class="header__fixed-shadow" id="fixed-shadow"></div>
 	<div class="header__wrap">
-		<nav class="header_navigation">
-			<div class="header_navigation__icon"><i class="header_navigation__icon-logo"></i></div>
-			<ul class="header_navigation__items"> 
-				<li class="header_navigation__item header_navigation__item-active">	
-					<a href="#" class="header_navigation__link">Аренда</a>
+		<nav class="header_navigation " id="header-nav">
+			<ul class="header_navigation__items">
+				<li class="header_navigation__icon" id="icon-link"><a href="#"><i class="header_navigation__icon-logo"></i></a></li> 
+				<li class="header_navigation__item header_navigation__item--select">	
+					<a href="#" id="nav-link-active" class="header_navigation__link header_navigation__link--active">Аренда</a>
 				</li>
 				<li class="header_navigation__item">
 					<a href="#" class="header_navigation__link">Продажа</a>
@@ -19,12 +20,21 @@
 						<span class="header_navigation__circle"></span>
 					</div>
 					<span class="header_navigation__other">Еще</span>
+					<ul class="header_navigation__other-menu">
+						<li class="header_navigation__item-menu">Блог</li>
+						<li class="header_navigation__item-menu">Контакты</li>
+						<li class="header_navigation__item-menu">Новый поиск</li>
+					</ul>
 				</li>
 			</ul>
+			<div class="header_navigation__right-menu " id="right-menu">
+				<a href="#" class="header__btn-replace-ad">Разместить объявление</a>
+				<a href="" class="header__btn-sign-in">Войти</a>
+			</div>
+			<div class="header_navigation__menu-open">
+				<input type="checkbox" id="menu-open">
+				<label for="menu-open" id="menu-label" class="menu-open__label"><i class="menu-open__icon"></i></label>
+			</div>
 		</nav>
-		<div class="header__right-menu">
-			<a href="#" class="header__btn-replace-ad">Разместить объявление</a>
-			<a href="" class="header__btn-sign-in">Войти</a>
-		</div>
 	</div>
 </header>

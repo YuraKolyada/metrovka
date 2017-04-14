@@ -1,8 +1,4 @@
-
-
-var selectSearch = document.getElementsByClassName('search-home__city__option-selected');
-var selectFilter = document.getElementsByClassName('filter-home__metro__option-selected');
-var modal = document.getElementsByClassName('modal__option-selected');
+var selectSearch = document.getElementsByClassName('dropdown__option-selected');
 
 function open(){
 	this.parentElement.classList.add('open');
@@ -14,12 +10,7 @@ function close(){
 	this.nextElementSibling.classList.remove('open');	
 } 
 
-modal[0].onfocus = open;
-modal[0].onblur = close;
-
-
-selectSearch[0].onfocus = open;
-selectFilter[0].onfocus = open;
-selectSearch[0].onblur = close; 
-selectFilter[0].onblur = close;
-
+[].forEach.call(selectSearch, function(elem){
+	elem.onfocus = open;
+	elem.onblur = close;
+});

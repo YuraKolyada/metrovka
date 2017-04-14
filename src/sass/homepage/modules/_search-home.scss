@@ -1,6 +1,9 @@
 
 .search-home {
-
+	&__dropdown {
+		width: 100%;
+	}
+	
 	&__rooms {
 		display: flex;
 		margin-right: 15px;
@@ -10,19 +13,19 @@
 		font-size: 2rem;
 		line-height: 1.215;
 		color: #fff;
-		font-weight: 400;
-		letter-spacing: -1px;
+		letter-spacing: -0.6px;
 		padding-bottom: 41px;
+		font-weight: 600;
 	}
 	
 	@include circles(#fff, #fff, #fff, $a-color);
-	@include dropdown('city');
 	color: #fff;
 
 	&__label {
 		font-size: .875rem;
 		line-height: 1.215;
 		margin-bottom: 9px;
+		font-weight: 700;
 	}
 
 	&__city {

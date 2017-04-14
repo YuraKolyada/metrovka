@@ -3,10 +3,12 @@
   line-height: 1.0625rem;
   padding: 0 $padding-nav 8px $padding-nav;
   cursor: pointer;
-  margin-right: 35px;
+  margin-right: 37px;
+  font-weight: 400;
 }
 
 %filter-active {
+  font-weight: 600;
   width: 100%;
   border-bottom: 2px solid $border-open;
 }

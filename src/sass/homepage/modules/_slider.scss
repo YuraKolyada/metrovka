@@ -29,36 +29,45 @@
 		font-size: 1rem;
 		line-height: 1.5;
 		padding-right: 24px;
+		font-weight: 600;
 	}
 
 	&__checked {
 		@include sprite($checkmark-glyph);
 		transform: translateY(2px);
+		&--indent {
+			transform: translate(-15px, 1px);
+		}
+
+		&--indent-icon {
+			transform: translate(-7px, 1px);
+		}
 	}
 
 	&__rooms {
 		color: $color-rooms;
 		font-size: .75rem;
 		line-height: 1.25;
+		font-weight: 700;
 	}
 
 	&__square {
 		@extend .slider__rooms;
 		&:before {
 			content: '';
-			height: 2px;
-			width: 2px;
+			height: 4px;
+			width: 4px;
 			display: inline-flex;
 			border-radius: 50%;
 			background: $color-rooms;
-			transform: translateY(-5px);
+			transform: translateY(-3px);
     		align-items: center;
-    		margin: 0 5px;
+    		margin: 0 4px;
 		}
 	}
 
 	&__info-metro {
-		padding: 12px 0 20px;
+		padding: 12px 0 21px;
 	}
 
 	&__lines-metro {
@@ -90,6 +99,6 @@
 		padding: 0 9px;
 		font-size: .75rem;
 		line-height: 1rem;
-		letter-spacing: -0.4px;
+		font-weight: 600;
 	}
 }

@@ -2,5 +2,9 @@
 %title {
   font-size: 1.5rem;
   line-height: 2rem;
+  font-weight: 400;
+  @media screen and (max-width: 860px) {
+  	font-size: 1.25rem;
+  }
 }
 

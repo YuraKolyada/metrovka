@@ -1,7 +1,7 @@
 
 
 
-@mixin circles($border-circle, $bg-circle, $color-circle, $color-active){
+@mixin circles-modal($border-circle, $bg-circle, $color-circle, $color-active){
     &__room {
       width: 40px;
       height: 40px;
@@ -13,6 +13,7 @@
       margin-right: 12px;
       text-align: center;
       cursor: pointer;
+      font-weight: 600;
       &_active {
         background: $bg-circle;
         color: $color-active;
@@ -26,57 +27,7 @@
     }
 }
 
-@mixin dropdown($width: 100%, $size: .875rem){
-  &__select {
-    height: 40px;
-    width: $width;
-    border: 2px solid $border-select;
-    position: relative;
-    font-size: $size;
-    line-height: 36px;
-    background: #fff;
-    color: $a-color;
-    cursor: pointer;
-    &.open {
-      border: 2px solid $border-open;
-      border-bottom: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,.1);
-    }
-  }
-  &__option {
-    height: 40px;
-    padding-left: 16px; 
-    &-selected {
-      height: 36px;
-      padding-left: 16px;
-      &:after {
-        display: inline-block;
-        content: '';
-        border: 5px solid transparent;
-        border-top: 5px solid #30AE63;
-        position: absolute;
-        right: 15px;
-        top: calc(#{'50% - 2.5px'});
-      } 
-    }
-  }
-  &__options-wrap {
-    position: absolute;
-    display: none;
-    background: #fff;
-    width: calc(#{'100% + 4px'});
-    left: -2px;
-    &.open {
-      border: 2px solid $border-open;
-      border-top: 2px solid $border-select;
-      display: block;
-      box-shadow: 0 4px 8px rgba(0,0,0,.1);
-      z-index: 100;
-    } 
-  }
-}
-
-@mixin btn_green($width, $height: 40px){
+@mixin btn_green-modal($width, $height: 40px){
   width: $width;
   height: $height;
   background: $border-open;
@@ -86,6 +37,7 @@
   border: none;
   cursor: pointer;
   text-align: center;
+  font-weight: 700;
   &:hover {
     border: 1px solid $border-select;
     background: $bg-hover;
@@ -94,20 +46,22 @@
   }
 }
 
-%title {
+%title-modal {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-%filter {
+%filter-modal {
   font-size: .875rem;
   line-height: 1.0625rem;
   padding: 0 5.5px 8px 5.5px;
   cursor: pointer;
   margin-right: 35px;
+  font-weight: 400;
 }
 
-%filter-active {
+%filter-active-modal {
+  font-weight: 600;
   width: 100%;
   border-bottom: 2px solid $border-open;
 }

@@ -1,5 +1,5 @@
 .blogs {
-	margin-bottom: 66px;
+	margin-bottom: 61px;
 
 	&__title {
 		@extend %title;
@@ -7,9 +7,9 @@
 	}
 	
 	&__text {
-		width: 60%;
+		width: 59%;
 		margin: 0 auto;
-		padding: 20px 0 15px;
+		padding: 20px 0;
 		text-align: center;
 		font-size: .875rem;
 		line-height: 1.25rem;
@@ -18,7 +18,7 @@
 
 
 	&__wrap {
-		padding: 23px 23px 7px 23px;
+		padding: 19px 23px 7px 23px;
 	}
 
 	&__slider_photo {
@@ -27,7 +27,7 @@
 
 	&__sircles {
 		position: absolute;
-		right: 16px;
+		right: 18px;
 		top: 14px;
 		cursor: pointer;
 	}
@@ -36,7 +36,7 @@
 		width: 4px;
 		height: 4px;
 		border-radius: 50%;
-		margin-top: 4px;
+		margin-bottom: 4px;
 		background: #fff;
 
 	}
@@ -44,7 +44,9 @@
 	&__item__tag {
 		font-size: 11px;
 		line-height: 1rem;
-		padding: 20px 0 4px;
+		padding: 17px 0 5px;
+		font-weight: 700;
+		text-transform: uppercase;
 
 		&--techno {
 			color: $color-techno;
@@ -63,13 +65,15 @@
 		color: $color-rooms;
 		font-size: .75rem;
 		line-height: 1.25;
+		font-weight: 700;
 	}
 
 	&__item__title {
+		font-weight: 600;
 		font-size: 1rem;
 		line-height: 1.5;
 		padding-bottom: 20px;
-		width: calc(#{'100% - 20px'});
+		width: calc(#{'100% - 15px'});
 	}
 
 	&__item__time {
@@ -95,6 +99,7 @@
 		border-top: 2px solid $border-color;
 		cursor: pointer;
 		padding: 6px 0;
+		font-weight: 600;
 	}
 	
 }
