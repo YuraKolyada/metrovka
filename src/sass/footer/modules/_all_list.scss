@@ -5,6 +5,7 @@
 		margin-bottom: $list-title-margin;
 		font-size: 16px;
 		line-height: 2; 
+		font-weight: 600;
 	}
 
 	&__address {
@@ -14,7 +15,7 @@
 	&__city {
 		font-size: 11px;
 		line-height: 20px;
-		margin-bottom: $list-item-margin;
+		margin-bottom: 16px;
 	}
 	&__btn {
 		display: block;
@@ -27,16 +28,18 @@
 	}
 
 	&__social {
-		margin-bottom: $list-item-margin;
+		margin-bottom: 11px;
 		display: inline-flex;
 		line-height: 0;
 		align-items: center;
 	}
 
 	&__email {
-		font-family: 'Opens Sans';
+		color: $a-color;
+		font-size: 13px;
+		line-height: 20px;
 		display: block;
-		margin-bottom: $list-item-margin;
+		margin-bottom: 16px;
 	}
 
 	&__btn {

@@ -1,8 +1,12 @@
 .filter-home {
-	padding: 3.5vw;
+	padding: 3.6vw 2.9vw 3.6vw 3.6vw;
 	display: flex;
     justify-content: space-between;
-	@include dropdown('metro', 313px, .75rem);
+    flex-wrap: wrap;
+
+	&__dropdown {
+		width: 313px; 
+	}
 
 	&__btn {
 		@include btn_green(320px);
@@ -18,21 +22,14 @@
 		@extend %title;
 	}
 
+	&__items {
+		margin-top: -10px; 
+	}
+
 	&__item {
 		@extend %filter;
 		&-active {
 			@extend %filter-active;
 		}
-	}
-
-	&__metro__option-selected:before {
-		display: inline-flex;
-		content: '';
-		width: 8px;
-		height: 8px;
-		border-radius: 13px;
-		background: $red-status;
-		margin-right: 12px;
-		transform: translateY(-2px); 
 	}
 }

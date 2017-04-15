@@ -1,10 +1,10 @@
-@mixin dropdown($filter-name, $width: 100%, $size: .875rem){
-  &__#{$filter-name}__select {
+.dropdown-m {
+  &__select {
     height: 40px;
-    width: $width;
+    width: 100%;
     border: 2px solid $border-select;
     position: relative;
-    font-size: $size;
+    font-size: .875rem;
     line-height: 36px;
     background: #fff;
     color: $a-color;
@@ -15,12 +15,14 @@
       box-shadow: 0 4px 8px rgba(0,0,0,.1);
     }
   }
-  &__#{$filter-name}__option {
+  &__option {
     height: 40px;
     padding-left: 16px; 
+    font-weight: 600;
     &-selected {
       height: 36px;
       padding-left: 16px;
+      font-weight: 600;
       &:after {
         display: inline-block;
         content: '';
@@ -32,7 +34,7 @@
       } 
     }
   }
-  &__#{$filter-name}__options-wrap {
+  &__options-wrap {
     position: absolute;
     display: none;
     background: #fff;

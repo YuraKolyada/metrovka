@@ -24,43 +24,50 @@
 		padding: 4.7vw 3.55vw;
 		align-self: center;
 		width: (435px/890px)*100%;
-		margin-left: (90px/890px)*100%;
+		margin-left: 10.5%;
 
-		&__title {
+		&-title {
 			display: inline-block;
-			padding-left: 20px;
+			padding-left: 15px;
 			@extend %title;
 			transform: translateY(-75%);
 		}
 
-		&__title-list {
+		&-title-list {
 			@extend %title;
 			padding: 24px 0 20px;
 		}
 
-		&__item {
-			font-size: .875rem;
-			line-height: 1.25;
-			padding-bottom: 12px;
-			text-indent: 3px;
-		} 
-		&__list {
+		&-list {
 			padding-bottom: 20px;
+			counter-reset: item;
 		}
 
-		&__btn {
+		&-item {
+			font-size: .875rem;
+			line-height: 1.25rem;
+			padding-bottom: 12px;
+			display: block;
+			&:before {
+				counter-increment: item;
+				content: counter(item) ". ";
+				margin-right: 5px;
+			}
+		} 
+
+		&-btn {
 			@include btn_green(320px);
 			display: block;
 		}
 	} 
 
 	input[type="checkbox"] + &__slide {
-		width: 14px;
-		height: 14px;
+		width: 16px;
+		height: 16px;
 		display: inline-block;
 		border: 2px solid $border-open;
 		border-radius: 50%;
-		margin-right: 12px;
+		margin-left: 12px;
 		cursor: pointer;
 	}
 

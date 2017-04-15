@@ -1,9 +1,8 @@
 .modal {
-	@include dropdown();
-	@include circles($border-select, $border-open, $a-color, #fff);
+	@include circles-modal($border-select, $border-open, $a-color, #fff);
 
 	&__title {
-		@extend %title;
+		@extend %title-modal;
 		padding-bottom: 20px;
 	}
 	&__text {
@@ -12,9 +11,9 @@
 	}
 
 	&__item-list {
-		@extend %filter;
+		@extend %filter-modal;
 		&--active {
-			@extend %filter-active;
+			@extend %filter-active-modal;
 		}
 	}
 
@@ -23,7 +22,7 @@
 	}
 	
 	&__btn {
-		@include btn_green(100%);
+		@include btn_green-modal(100%);
 		display: block;
 	}
 	&__rooms {
@@ -44,6 +43,7 @@
 		padding-left: 16px;
 		font-size: 12px;
 		color: #5A6872;
+		font-weight: 600;
 	}
 
 	&__email {

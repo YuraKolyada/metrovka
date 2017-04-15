@@ -1,11 +1,26 @@
 .last-ads {
 	&__wrap {
-		padding: 20px 23px;
+		padding: 20px 23px 27px;
 	}
 
 	&__title {
 		@extend %title;
 		text-align: center;
+	}
+
+	&__wrap-list {
+		display: flex;
+    	justify-content: center;
+    	margin-left: 35px;
+	}
+
+	&__list {
+		display: inline-flex;
+		justify-content: center;
+		padding: 25px 0;
+		& > * {
+			flex: 0px;
+		}
 	}
 	
 	&__offers {
@@ -15,6 +30,7 @@
 		text-align: center;
 		border-top: 2px solid $border-color;
 		padding: 6px;
+		font-weight: 600;
 	}
 	
 	&__item-list {

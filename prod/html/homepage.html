@@ -25,11 +25,13 @@
 				<label for="modal__item-list-metro" class="modal__item-list">Метро</label>
 				<input id="modal__item-list-metro" type="radio" value="metro">
 			</div>
-			<div class="modal__select">
-				<div class="modal__option-selected" data-value="Голосеевский" tabindex="1">Голосеевский</div>
-				<div class="modal__options-wrap  ">
-					<div class="modal__option" data-value="Соломянский">Соломянский</div>
-					<div class="modal__option" data-value="Львов">Львовський</div>
+			<div class="modal__dropdown-m dropdown-m">
+				<div class="dropdown-m__select">
+					<div class="dropdown-m__option-selected" data-value="Голосеевский" tabindex="1">Голосеевский</div>
+					<div class="dropdown-m__options-wrap">
+						<div class="dropdown-m__option" data-value="Соломянский">Соломянский</div>
+						<div class="dropdown-m__option" data-value="Львов">Львовський</div>
+					</div>
 				</div>
 			</div>
 			<p class="modal__label">Кол-во комнат</p>
@@ -52,12 +54,13 @@
 <div class="modal__overlay"></div>
 	<div class="container-search-home">
 		<header class="header">
+	<div class="header__fixed-shadow" id="fixed-shadow"></div>
 	<div class="header__wrap">
-		<nav class="header_navigation">
-			<div class="header_navigation__icon"><i class="header_navigation__icon-logo"></i></div>
-			<ul class="header_navigation__items"> 
-				<li class="header_navigation__item header_navigation__item-active">	
-					<a href="#" class="header_navigation__link">Аренда</a>
+		<nav class="header_navigation " id="header-nav">
+			<ul class="header_navigation__items">
+				<li class="header_navigation__icon" id="icon-link"><a href="#"><i class="header_navigation__icon-logo"></i></a></li> 
+				<li class="header_navigation__item header_navigation__item--select">	
+					<a href="#" id="nav-link-active" class="header_navigation__link header_navigation__link--active">Аренда</a>
 				</li>
 				<li class="header_navigation__item">
 					<a href="#" class="header_navigation__link">Продажа</a>
@@ -72,13 +75,22 @@
 						<span class="header_navigation__circle"></span>
 					</div>
 					<span class="header_navigation__other">Еще</span>
+					<ul class="header_navigation__other-menu">
+						<li class="header_navigation__item-menu">Блог</li>
+						<li class="header_navigation__item-menu">Контакты</li>
+						<li class="header_navigation__item-menu">Новый поиск</li>
+					</ul>
 				</li>
 			</ul>
+			<div class="header_navigation__right-menu " id="right-menu">
+				<a href="#" class="header__btn-replace-ad">Разместить объявление</a>
+				<a href="" class="header__btn-sign-in">Войти</a>
+			</div>
+			<div class="header_navigation__menu-open">
+				<input type="checkbox" id="menu-open">
+				<label for="menu-open" id="menu-label" class="menu-open__label"><i class="menu-open__icon"></i></label>
+			</div>
 		</nav>
-		<div class="header__right-menu">
-			<a href="#" class="header__btn-replace-ad">Разместить объявление</a>
-			<a href="" class="header__btn-sign-in">Войти</a>
-		</div>
 	</div>
 </header>
 		<h1 class="search-home__title">Поиск недвижимости в Украине</h1>
@@ -86,13 +98,15 @@
 			<form class="search-home__info">
 				<div class="search-home__city">
 					<p class="search-home__label">Выберите город</p>
-					<div class="search-home__city__select">
-						<div class="search-home__city__option-selected" data-value="Киев" tabindex="1">Киев</div>
-						<div class="search-home__city__options-wrap  ">
-							<div class="search-home__city__option" data-value="Харьков">Харьков</div>
-							<div class="search-home__city__option" data-value="Львов">Львов</div>
-							<div class="search-home__city__option" data-value="Львов">Полтава</div>
-							<div class="search-home__city__option" data-value="Львов">Чернигов</div>
+					<div class="search-home__dropdown dropdown">
+						<div class="dropdown__select">
+							<div class="dropdown__option-selected" data-value="Киев" tabindex="1">Киев</div>
+							<div class="dropdown__options-wrap  ">
+								<div class="dropdown__option" data-value="Харьков">Харьков</div>
+								<div class="dropdown__option" data-value="Львов">Львов</div>
+								<div class="dropdown__option" data-value="Львов">Полтава</div>
+								<div class="dropdown__option" data-value="Львов">Чернигов</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -126,17 +140,19 @@
 					<label for="filter-home__item-office" class="filter-home__item">Офисы</label>
 					<input id="filter-home__item-office" type="radio" value="office">
 				</div>
-				<div class="filter-home__metro__select">
-					<div class="filter-home__metro__option-selected" data-value="kpi" tabindex="1">Политехнический институт</div>
-					<div class="filter-home__metro__options-wrap  ">
-						<div class="filter-home__metro__option" data-value="shylavka">Шулявская</div>
-						<div class="filter-home__metro__option" data-value="vokzal">Вокзальная</div>
-						<div class="filter-home__metro__option" data-value="univer">Университет</div>
+				<div class="filter-home__dropdown dropdown">
+					<div class="dropdown__select dropdown__select--mod">
+						<div class="dropdown__option-selected dropdown__option--dot" data-value="kpi" tabindex="1">Политехнический институт</div>
+						<div class="dropdown__options-wrap  ">
+							<div class="dropdown__option dropdown__option--dot" data-value="shylavka">Шулявская</div>
+							<div class="dropdown__option dropdown__option--dot" data-value="vokzal">Вокзальная</div>
+							<div class="dropdown__option dropdown__option--dot" data-value="univer">Университет</div>
+						</div>
 					</div>
 				</div>
 				<button class="filter-home__btn"> Показать результаты поиска </button>
 			</div>
-			<div class="filter-home__photo"><img src="../images/metro.png" alt=""></div>
+			<div class="filter-home__photo"><img src="../images/metro.png" alt="metro" class="filter-home__photo-metro"></div>
 		</section>
 		<section class="best-home">
 			<div class="best-home__wrap wrapper">
@@ -254,7 +270,7 @@
 							</div>
 							<div class="slider__info-price">
 								<span class="slider__price">11 800 грн</span>
-								<i class="slider__checked"></i>
+								<i class="slider__checked slider__checked--indent"></i>
 							</div>
 							<span class="slider__rooms">2 комн.</span>
 							<span class="slider__square">48 кв.м.</span>
@@ -274,7 +290,7 @@
 							</div>
 							<div class="slider__info-price">
 								<span class="slider__price">15 000 грн</span>
-								<i class="slider__checked"></i>
+								<i class="slider__checked slider__checked--indent"></i>
 							</div>
 							<span class="slider__rooms">3 комн.</span>
 							<span class="slider__square">100 кв.м.</span>
@@ -294,8 +310,8 @@
 							</div>
 							<div class="slider__info-price">
 								<span class="slider__price">11 800 грн</span>
-								<i class="slider__checked"></i>
-								<i class="slider__checked"></i>
+								<i class="slider__checked slider__checked--indent"></i>
+								<i class="slider__checked slider__checked--indent-icon"></i>
 							</div>
 							<span class="slider__rooms">1 комн.</span>
 							<span class="slider__square">30 кв.м.</span>
@@ -315,7 +331,7 @@
 							</div>
 							<div class="slider__info-price">
 								<span class="slider__price">7 000 грн</span>
-								<i class="slider__checked"></i>
+								<i class="slider__checked slider__checked--indent"></i>
 							</div>
 							<span class="slider__rooms">2 комн.</span>
 							<span class="slider__square">40 кв.м.</span>
@@ -345,15 +361,15 @@
 			<div class="social__container">
 				<img src="../images/phone-telegram.png" alt="phone-telegram" class="social__phone">
 				<div class="social__info">
-					<i class="social__info__image"></i>
-					<h3 class="social__info__title">Telegram</h3>
-					<h3 class="social__info__title-list">Metrovka Bot</h3>
-					<ol class="social__info__list">
-						<li class="social__info__item">	1. 	Собирайте аналитику по объектам</li>
-						<li class="social__info__item">	2. 	Получайте подсказки по эффективному продвижению объявлений</li>
-						<li class="social__info__item">	3. 	Общайтесь с клиентами через специальный канал телекоммуникации</li>
+					<i class="social__info-image"></i>
+					<h3 class="social__info-title">Telegram</h3>
+					<h3 class="social__info-title-list">Metrovka Bot</h3>
+					<ol class="social__info-list">
+						<li class="social__info-item">Собирайте аналитику по объектам</li>
+						<li class="social__info-item social__info-item--size">Получайте подсказки по эффективному продвижению объявлений</li>
+						<li class="social__info-item">Общайтесь с клиентами через специальный канал телекоммуникации</li>
 					</ol>
-					<a href="#" class="social__info__btn">Присоединиться в Telegram</a>
+					<a href="#" class="social__info-btn">Присоединиться в Telegram</a>
 				</div>
 			</div>
 			<div class="social__slides">
@@ -476,7 +492,7 @@
 	<a href="#" class="footer__logo"><i class="footer__logo_icon"></i></a>
 </footer>
 	</div>
-	<script type="text/javascript" src='./../js/dropdown.js'></script>
-	<script type="text/javascript" src='./../js/modal.js'></script>
+	
+	<script type="text/javascript" src='./../js/script.js'></script>
 </body>
 </html>
