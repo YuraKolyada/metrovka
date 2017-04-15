@@ -72,7 +72,8 @@ img {
   font-size: .875rem;
   line-height: 1.22071;
   padding-top: 20px;
-  font-weight: 600; }
+  font-weight: 600;
+  letter-spacing: 0.25px; }
 
 .filter__title {
   color: #152935;
@@ -100,13 +101,13 @@ img {
   display: inline-flex;
   -ms-transform: translateY(-25%);
   transform: translateY(-25%);
-  margin-left: 15px; }
+  margin-left: 12px; }
 
 .filter__sorting-results:after {
-  margin-left: 20px; }
+  margin-left: 13px; }
 
 .filter__sorting-results {
-  padding-right: 22px; }
+  padding-right: 27px; }
 
 .filter__result-address {
   color: #2C74C7;
@@ -114,13 +115,13 @@ img {
   line-height: 22px; }
 
 .filter__result-place {
-  padding: 10px 0 20px; }
+  padding: 6px 0 23px; }
 
 .filter__result-place-metro {
   color: #000;
   font-size: .75rem;
   line-height: 15px;
-  padding-right: 19px; }
+  padding-right: 12px; }
 
 .filter__result-place-time {
   color: #9B9B9B;
@@ -136,13 +137,13 @@ img {
   color: #4A4A4A;
   font-size: .75rem;
   line-height: 15px;
-  padding-top: 6px; }
+  padding-top: 3px; }
 
 .filter__result-text {
   color: #000;
   font-size: 13px;
   line-height: 20px;
-  padding: 19px 0 23px;
+  padding: 9px 0 13px;
   font-weight: 400; }
 
 .filter__result-price {
@@ -154,12 +155,12 @@ img {
   color: #9B9B9B;
   line-height: 24px;
   font-size: 14px;
-  padding: 4px 0 20px; }
+  padding: 6px 0 20px; }
 
 .filter__result-price-cource {
   padding: 0 1.5px 2px 1.5px;
   border-bottom: 2px solid #B1B1B1;
-  margin-left: 15px;
+  margin-left: 12px;
   cursor: pointer; }
 
 .filter__results {
@@ -167,22 +168,23 @@ img {
   .filter__results-other {
     font-size: 12px;
     line-height: 20px;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    bottom: 0; }
+    cursor: pointer; }
+    .filter__results-other--mid {
+      padding-bottom: 7px; }
+    .filter__results-other--last {
+      padding-bottom: 7px; }
   .filter__results-section {
     color: #979797; }
   .filter__results-section-name {
     color: rgba(0, 0, 0, 0.6);
-    padding-right: 7px; }
+    padding-right: 12px; }
   .filter__results-section-icon {
     background-image: url(../../images/icons_list.png);
     background-position: -29px -35px;
     width: 12px;
     height: 10px;
     display: inline-block;
-    margin-left: 17px; }
+    margin-left: 20px; }
 
 .filter__result-metro-status {
   width: 8px;
@@ -191,7 +193,8 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-transform: translateY(-25%);
-  transform: translateY(-25%); }
+  transform: translateY(-25%);
+  margin-right: 4px; }
   .filter__result-metro-status--green {
     background: #30AD64; }
   .filter__result-metro-status--blue {
@@ -202,7 +205,12 @@ img {
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-bottom: 17px; }
+  position: absolute;
+  bottom: 2px;
+  padding-bottom: 17px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 input[type="checkbox"] + .filter__result-slide {
   width: 8px;
@@ -210,7 +218,7 @@ input[type="checkbox"] + .filter__result-slide {
   display: inline-block;
   background: #D8D8D8;
   border-radius: 50%;
-  margin-right: 12px;
+  margin-right: 10px;
   cursor: pointer; }
 
 input[type="checkbox"]:checked + .filter__result-slide {
@@ -233,7 +241,7 @@ input[type="checkbox"]:checked + .filter__result-slide {
     width: 19px;
     height: 20px;
     display: inline-block;
-    margin-left: 17px;
+    margin-left: 9px;
     -ms-transform: translateY(25%);
     transform: translateY(25%); }
   .filter__result-btn--high {
@@ -417,7 +425,7 @@ input[type="checkbox"]:checked + .filter__result-slide {
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
-    padding: 56px 0 0 69px; }
+    padding: 56px 0 0 71px; }
     .header_navigation__items {
       -ms-flex-direction: column;
       flex-direction: column;
@@ -427,15 +435,15 @@ input[type="checkbox"]:checked + .filter__result-slide {
         z-index: 1000; }
     .header_navigation__icon {
       position: absolute;
-      top: 5px;
+      top: 0;
       left: -2px;
       display: block; }
     .header_navigation__item.open-start {
       display: block; }
     .header_navigation__item--select {
       position: absolute;
-      top: 3px;
-      left: 69px;
+      top: 0px;
+      left: 71px;
       display: block; }
     .header_navigation__right-menu {
       display: none; }
@@ -463,8 +471,8 @@ input[type="checkbox"]:checked + .filter__result-slide {
     .header_navigation__menu-open {
       display: block;
       position: absolute;
-      top: 15px;
-      right: 10px;
+      top: 11px;
+      right: 2px;
       z-index: 1000; }
     .header_navigation__right-menu {
       z-index: 1000; }
@@ -881,7 +889,9 @@ input[type="checkbox"]:checked + .filter__result-slide {
     justify-content: space-between;
     background: #fff;
     margin-bottom: 12px;
-    padding: 12px 20px; }
+    padding: 13px 20px; }
+    .filter__result-flat:last-child {
+      margin-bottom: 0; }
   .filter__result-description-wrap {
     display: -ms-flexbox;
     display: flex; }
@@ -893,16 +903,20 @@ input[type="checkbox"]:checked + .filter__result-slide {
     align-self: flex-start; }
   .filter__result-description {
     -ms-flex-preferred-size: 320px;
-    flex-basis: 320px; }
-  .filter__result-finance {
-    text-align: right;
+    flex-basis: 320px;
     position: relative; }
+  .filter__result-finance {
+    text-align: right; }
   .filter__result-contacts {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 16px 0 32px; }
+    margin: 22px 0 33px; }
+    .filter__result-contacts--mid {
+      margin: 19px 0 26px; }
+    .filter__result-contacts--last {
+      margin: 19px 0 26px; }
 
 .container {
   width: 100%;
@@ -944,16 +958,30 @@ input[type="checkbox"]:checked + .filter__result-slide {
     .filter__details {
       width: 890px; } }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 940px) {
   .filter {
     width: 100%; }
     .filter__details {
       padding: 0 20px; }
+    .filter__title {
+      font-size: 1rem; }
+    .filter__number {
+      margin-bottom: 12px; }
   .filter__result-photo {
     -ms-flex-preferred-size: 320px;
     flex-basis: 320px;
-    min-width: 320px; }
+    min-width: 320px;
+    margin: 0; }
   .filter__result-description-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .filter__result-description {
+    position: static; }
+  .filter__result-slides {
+    position: static;
+    -ms-transform: none;
+    transform: none; }
+  .filter__result-range {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; } }
 
@@ -966,13 +994,51 @@ input[type="checkbox"]:checked + .filter__result-slide {
     position: relative; }
   .filter__result-finance {
     position: static;
-    text-align: start; }
+    text-align: start;
+    width: 100%; }
+  .filter__result-btn {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-left: 14px;
+    margin: 22px 19px 0 0; }
+    .filter__result-btn:after {
+      -ms-transform: translateY(35%);
+      transform: translateY(35%); }
+    .filter__result-btn-social {
+      margin-left: 8px;
+      height: 34px;
+      line-height: 34px; }
+    .filter__result-btn-phone {
+      height: 34px;
+      line-height: 34px; }
   .filter__result-slides {
     position: absolute;
-    bottom: 0;
+    bottom: 38px;
     left: 50%;
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%); } }
+    transform: translateX(-50%); }
+  .filter__result-price-cource {
+    display: none; }
+  .filter__result-address {
+    padding-top: 30px; }
+  .filter__result-price {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 50%; }
+  .filter__result-change {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 46%;
+    padding: 6px 0 0px; }
+  .filter__result-contacts {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 22px 0 87px;
+    float: right; }
+  .filter__results-other {
+    position: absolute;
+    right: 20px;
+    bottom: 38px; } }
 
 .filter__sorting-currency:hover, .filter__sorting-results:hover {
   cursor: pointer; }

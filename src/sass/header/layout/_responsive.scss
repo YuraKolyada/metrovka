@@ -24,7 +24,7 @@
 		align-items: flex-start;
 		flex-direction: column;
 		position: relative;
-		padding: 56px 0 0 69px;
+		padding: 56px 0 0 71px;
 		
 		&__items{
 			flex-direction: column;
@@ -37,7 +37,7 @@
 
 		&__icon {
 			position: absolute;
-			top: 5px; 
+			top: 0; 
 			left: -2px;
 			display: block;
 		}
@@ -50,8 +50,8 @@
 				
 			&--select {
 				position: absolute;
-				top: 3px; 
-				left: 69px;
+				top: 0px; 
+				left: 71px;
 				display: block;
 			}
 		}
@@ -99,8 +99,8 @@
 		&__menu-open {
 			display: block;
 			position: absolute;
-			top: 15px;
-			right: 10px;
+			top: 11px;
+			right: 2px;
 			z-index: 1000;
 		}
 

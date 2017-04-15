@@ -1,0 +1,45 @@
+@media screen and (max-width: 940px){
+	.filter {
+		width: 100%;
+
+		&__details {
+			padding: 0 20px;
+		}
+
+		&__title {
+			font-size: 1rem;
+		}
+
+		&__number {
+			margin-bottom: 12px;
+		}
+
+	}
+
+	.filter__result {
+		
+		&-photo {
+			flex-basis: 320px;
+			min-width: 320px;
+			margin: 0;
+		}
+
+		&-description-wrap {
+			flex-wrap: wrap;
+		}
+
+		&-description {
+			position: static;	
+		}
+
+		&-slides {
+			position: static;
+			transform: none;
+		}
+
+		&-range {
+			flex-wrap: wrap;
+		}
+	}
+}
+

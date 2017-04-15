@@ -12,7 +12,11 @@
 		justify-content: space-between;
 		background: #fff;
 		margin-bottom: 12px; 
-		padding: 12px 20px;
+		padding: 13px 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__result-description-wrap {
@@ -27,16 +31,24 @@
 
 	&__result-description {
 		flex-basis: 320px;
+		position: relative;
 	}
 
 	&__result-finance {
 		text-align: right;
-		position: relative;
 	}
 
 	&__result-contacts {
 		display: flex;
 		justify-content: space-between;
-		margin: 16px 0 32px;
+		margin: 22px 0 33px;
+
+		&--mid {
+			margin: 19px 0 26px;
+		}
+
+		&--last {
+			margin: 19px 0 26px;
+		}
 	}
 }

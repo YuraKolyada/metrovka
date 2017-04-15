@@ -8,14 +8,14 @@
 	}
 	
 	&-place {
-		padding: 10px 0 20px;
+		padding: $padding-place 0 23px;
 	}
 
 	&-place-metro {
 		color: #000;
 		font-size: .75rem;
 		line-height: 15px;
-		padding-right: 19px; 
+		padding-right: $padding-12; 
 	}
 	&-place-time {
 		color: $color-st;
@@ -32,14 +32,14 @@
 		color: $color-size;
 		font-size: .75rem;
 		line-height: 15px;
-		padding-top: 6px;
+		padding-top: 3px;
 	}
 
 	&-text {
 		color: #000;
 		font-size: 13px;
 		line-height: 20px;
-		padding: 19px 0 23px;
+		padding: 9px 0 13px;
 		font-weight: 400;
 	}
 
@@ -53,13 +53,13 @@
 		color: $color-st;
 		line-height: 24px;
 		font-size: 14px;
-		padding: 4px 0 20px;
+		padding: $padding-place 0 20px;
 	}
 
 	&-price-cource {
 		padding: 0 1.5px 2px 1.5px;
 		border-bottom: 2px solid #B1B1B1;
-		margin-left: 15px;
+		margin-left: $padding-12;
 		cursor: pointer;
 	}
 }
@@ -71,9 +71,14 @@
 		font-size: 12px;
 		line-height: 20px;
 		cursor: pointer;
-		position: absolute;
-		right: 0;
-		bottom: 0;
+
+		&--mid {
+			padding-bottom: 7px;
+		}
+
+		&--last {
+			padding-bottom: 7px;
+		}
 	}
 
 	&-section {
@@ -82,11 +87,11 @@
 
 	&-section-name {
 		color: $bg-slide;
-		padding-right: 7px;
+		padding-right: 12px;
 	}
 
 	&-section-icon {
 		@include sprite($-group-9-copy-7);
-		margin-left: 17px;
+		margin-left: 20px;
 	}
 }
