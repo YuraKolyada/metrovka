@@ -1,3 +1,19 @@
-.header__btn-replace-ad:hover {
-	opacity: 0.6;
+.header__btn-replace-ad {
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:disabled {
+	    opacity: 0.2;
+	}
+}
+
+
+
+.slider__item:hover {
+	cursor: pointer;
+}
+
+.blogs__item:hover {
+	cursor: pointer;
 }

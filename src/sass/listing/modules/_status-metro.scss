@@ -5,6 +5,7 @@
 		border-radius: 50%;
 		display: inline-flex;
 		transform: translateY(-25%);
+		margin-right: 4px;
 		&--green {
 			background: $green-status;
 		}

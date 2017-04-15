@@ -11,4 +11,8 @@
         border-top: none;
         border-bottom: 5px solid #30AE63;
     }
+
+    &:disabled {
+	    opacity: 0.5;
+	}
 }

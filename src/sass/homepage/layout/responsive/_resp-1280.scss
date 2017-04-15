@@ -1,0 +1,31 @@
+.container-search-home {
+	@media screen and (max-width: 1120px) {
+		& > * {
+			width: calc(#{' 100% - 32px'});			
+		}
+	}
+}
+
+section {
+	@media screen and (max-width: 1120px) {
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 1120px) {
+	.filter-home {
+		padding: 20px 16px;
+	}
+
+	
+	.wrapper {
+		padding: 22px 0 18px 0;
+	}
+
+	.blogs__wrap {
+		padding: 20px 0 0;
+	}
+
+}
+

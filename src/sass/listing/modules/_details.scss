@@ -5,6 +5,7 @@
 		line-height: $line-17;
 		padding-top: 20px; 
 		font-weight: 600;
+		letter-spacing: 0.25px;
 	}
 
 	&__title {
@@ -32,16 +33,16 @@
 			content: '';
 			display: inline-flex;
 			transform: translateY(-25%);
-			margin-left: 15px; 
+			margin-left: 12px; 
 		}
 
 		&-results:after {
 			@extend .filter__sorting-currency:after;
-			margin-left: 20px;
+			margin-left: 13px;
 		}
 
 		&-results {
-			padding-right: 22px;
+			padding-right: 27px;
 		}
 	}
 }

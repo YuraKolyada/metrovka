@@ -3,7 +3,11 @@
 	&-slides {
 		display: flex;
 		justify-content: center;
+		position: absolute;
+		bottom: 2px;
 		padding-bottom: 17px;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	input[type="checkbox"] + &-slide {
@@ -12,7 +16,7 @@
 		display: inline-block;
 		background: $border-color;
 		border-radius: 50%;
-		margin-right: 12px;
+		margin-right: 10px;
 		cursor: pointer;
 	}
 

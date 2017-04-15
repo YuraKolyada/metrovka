@@ -10,10 +10,15 @@
   cursor: pointer;
   text-align: center;
   font-weight: 700;
+
   &:hover {
     border-radius: 0;
     background: $border-open;
     color: #fff;
+  }
+
+  &:disabled {
+    opacity: 0.4;
   }
 }
 
@@ -33,5 +38,9 @@
     background: $bg-hover;
     color: #fff;
     line-height: 38px;
+  }
+
+   &:disabled {
+    opacity: 0.4;
   }
 }
