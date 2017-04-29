@@ -3,8 +3,12 @@
 		border-bottom: 2px solid #fff;
 		transition: all .25s;
 	}
+	&__link:active {
+		border-bottom: 2px solid #fff;
+	}
 }
 
 .header__btn-replace-ad:hover {
 	opacity: 0.6;
+	border: 1px solid #fff;
 }

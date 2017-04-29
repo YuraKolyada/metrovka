@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Metrovka</title>
 	<link rel="stylesheet" href="./../css/homepage/style-home.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 	<div class="modal">
@@ -257,9 +258,9 @@
 						<input id="last-ads__item-list-office" type="radio" value="office">
 					</div>
 				</div>
-				<div class="last-ads__slider slider">
-					<div class="slider__items">
-						<div class="slider__item">
+				<div class="last-ads__slider j-slider">
+					<div class="slider__items j-slider__items">
+						<div class="slider__item j-slider__item">
 							<div class="slider__photo-wrap">
 								<img src="../images/rooms_second.png" alt="rooms" class="slider__photo">
 								<div class="slider__circles">
@@ -279,7 +280,7 @@
 								<span class="slider__metro">Политехнический институт</span>
 							</div>
 						</div>
-						<div class="slider__item">
+						<div class="slider__item j-slider__item">
 							<div class="slider__photo-wrap">
 								<img src="../images/rooms_first.png" alt="home" class="slider__photo">
 								<div class="slider__circles">
@@ -299,7 +300,7 @@
 								<span class="slider__metro">Шулявская</span>
 							</div>
 						</div>
-						<div class="slider__item">
+						<div class="slider__item j-slider__item">
 							<div class="slider__photo-wrap">
 								<img src="../images/rooms_shird.png" alt="home" class="slider__photo">
 								<div class="slider__circles">
@@ -320,7 +321,7 @@
 								<span class="slider__metro">Контрактовая площадь</span>
 							</div>
 						</div>
-						<div class="slider__item">
+						<div class="slider__item j-slider__item">
 							<div class="slider__photo-wrap">
 								<img src="../images/homees-01.png" alt="home" class="slider__photo">
 								<div class="slider__circles">
@@ -338,6 +339,90 @@
 							<div class="slider__info-metro">
 								<i class="slider__lines-metro none"></i>
 								<span class="slider__metro">просп. Победы, 18А</span>
+							</div>
+						</div>
+						<div class="slider__item j-slider__item">
+							<div class="slider__photo-wrap">
+								<img src="../images/rooms_shird.png" alt="home" class="slider__photo">
+								<div class="slider__circles">
+									<div class="slider__circle"></div>
+									<div class="slider__circle"></div>
+									<div class="slider__circle"></div>
+								</div>
+							</div>
+							<div class="slider__info-price">
+								<span class="slider__price">11 800 грн</span>
+								<i class="slider__checked slider__checked--indent"></i>
+								<i class="slider__checked slider__checked--indent-icon"></i>
+							</div>
+							<span class="slider__rooms">1 комн.</span>
+							<span class="slider__square">30 кв.м.</span>
+							<div class="slider__info-metro">
+								<i class="slider__lines-metro blue"></i>
+								<span class="slider__metro">Контрактовая площадь</span>
+							</div>
+						</div>
+						<div class="slider__item j-slider__item">
+							<div class="slider__photo-wrap">
+								<img src="../images/rooms_shird.png" alt="home" class="slider__photo">
+								<div class="slider__circles">
+									<div class="slider__circle"></div>
+									<div class="slider__circle"></div>
+									<div class="slider__circle"></div>
+								</div>
+							</div>
+							<div class="slider__info-price">
+								<span class="slider__price">11 800 грн</span>
+								<i class="slider__checked slider__checked--indent"></i>
+								<i class="slider__checked slider__checked--indent-icon"></i>
+							</div>
+							<span class="slider__rooms">1 комн.</span>
+							<span class="slider__square">30 кв.м.</span>
+							<div class="slider__info-metro">
+								<i class="slider__lines-metro blue"></i>
+								<span class="slider__metro">Контрактовая площадь</span>
+							</div>
+						</div>
+						<div class="slider__item j-slider__item">
+							<div class="slider__photo-wrap">
+								<img src="../images/rooms_shird.png" alt="home" class="slider__photo">
+								<div class="slider__circles">
+									<div class="slider__circle"></div>
+									<div class="slider__circle"></div>
+									<div class="slider__circle"></div>
+								</div>
+							</div>
+							<div class="slider__info-price">
+								<span class="slider__price">11 800 грн</span>
+								<i class="slider__checked slider__checked--indent"></i>
+								<i class="slider__checked slider__checked--indent-icon"></i>
+							</div>
+							<span class="slider__rooms">1 комн.</span>
+							<span class="slider__square">30 кв.м.</span>
+							<div class="slider__info-metro">
+								<i class="slider__lines-metro blue"></i>
+								<span class="slider__metro">Контрактовая площадь</span>
+							</div>
+						</div>
+						<div class="slider__item j-slider__item">
+							<div class="slider__photo-wrap">
+								<img src="../images/rooms_shird.png" alt="home" class="slider__photo">
+								<div class="slider__circles">
+									<div class="slider__circle"></div>
+									<div class="slider__circle"></div>
+									<div class="slider__circle"></div>
+								</div>
+							</div>
+							<div class="slider__info-price">
+								<span class="slider__price">11 800 грн</span>
+								<i class="slider__checked slider__checked--indent"></i>
+								<i class="slider__checked slider__checked--indent-icon"></i>
+							</div>
+							<span class="slider__rooms">1 комн.</span>
+							<span class="slider__square">30 кв.м.</span>
+							<div class="slider__info-metro">
+								<i class="slider__lines-metro blue"></i>
+								<span class="slider__metro">Контрактовая площадь</span>
 							</div>
 						</div>
 					</div>
@@ -358,22 +443,40 @@
 					</div>
 				</div>
 			</div>
-			<div class="social__container">
-				<img src="../images/phone-telegram.png" alt="phone-telegram" class="social__phone">
-				<div class="social__info">
-					<i class="social__info-image"></i>
-					<h3 class="social__info-title">Telegram</h3>
-					<h3 class="social__info-title-list">Metrovka Bot</h3>
-					<ol class="social__info-list">
-						<li class="social__info-item">Собирайте аналитику по объектам</li>
-						<li class="social__info-item social__info-item--size">Получайте подсказки по эффективному продвижению объявлений</li>
-						<li class="social__info-item">Общайтесь с клиентами через специальный канал телекоммуникации</li>
-					</ol>
-					<a href="#" class="social__info-btn">Присоединиться в Telegram</a>
+			<div class="social__slider">
+				<div class="social__items j-slider__items">
+					<div class="social__item j-slider__item">
+						<img src="../images/phone-telegram.png" alt="phone-telegram" class="social__phone">
+						<div class="social__info">
+							<i class="social__info-image"></i>
+							<h3 class="social__info-title">Telegram</h3>
+							<h3 class="social__info-title-list">Metrovka Bot</h3>
+							<ol class="social__info-list">
+								<li class="social__info-item">Собирайте аналитику по объектам</li>
+								<li class="social__info-item social__info-item--size">Получайте подсказки по эффективному продвижению объявлений</li>
+								<li class="social__info-item">Общайтесь с клиентами через специальный канал телекоммуникации</li>
+							</ol>
+							<a href="#" class="social__info-btn">Присоединиться в Telegram</a>
+						</div>
+					</div>
+					<div class="social__item j-slider__item">
+						<img src="../images/phone-telegram.png" alt="phone-telegram" class="social__phone">
+						<div class="social__info">
+							<i class="social__info-image"></i>
+							<h3 class="social__info-title">VK</h3>
+							<h3 class="social__info-title-list">VK Bot</h3>
+							<ol class="social__info-list">
+								<li class="social__info-item">Собирайте аналитику по объектам</li>
+								<li class="social__info-item social__info-item--size">Получайте подсказки по эффективному продвижению объявлений</li>
+								<li class="social__info-item">Общайтесь с клиентами через специальный канал телекоммуникации</li>
+							</ol>
+							<a href="#" class="social__info-btn">Присоединиться в VK</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="social__slides">
-				<input type="checkbox" id="social__slide-first" name="slide1" checked/>
+				<input type="checkbox" id="social__slide-first" name="slide1" />
 				<label for="social__slide-first"
 				class = "social__slide"></label>
 				<input type="checkbox" id="social__slide-second" name="slide1"/>

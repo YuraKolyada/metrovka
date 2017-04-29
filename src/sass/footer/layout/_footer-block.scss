@@ -7,7 +7,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 0 23px;
-	& > * {
+	& > *:not(&__logo) {
 		flex-basis: (202px/844px)*100%;
 		min-width: 202px;
 		margin-bottom: 32px;

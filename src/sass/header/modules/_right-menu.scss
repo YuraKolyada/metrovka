@@ -11,14 +11,20 @@
 .header {
 
 	&__btn-sign-in {
-		@extend %btn; 
+		@extend %btn;
+		&:hover {
+			opacity: 0.6;
+		}
+		&:disabled {
+			opacity: 0.25;
+		}  
 	}
 
 	&__btn-replace-ad {
 		@extend %btn;
 		background: rgba(255,255,255,.1);
-		padding-right: 30px; 
-		margin-right: 16px; 
+		width: 236px;
+    	margin-right: 8px;
 		&:before {
 			content: '';
 			@include sprite($-shape);

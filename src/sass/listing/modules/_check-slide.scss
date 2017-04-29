@@ -4,13 +4,12 @@
 		display: flex;
 		justify-content: center;
 		position: absolute;
-		bottom: 2px;
-		padding-bottom: 17px;
-		left: 50%;
+		bottom: 10px;
+    	left: 25%;
 		transform: translateX(-50%);
 	}
 
-	input[type="checkbox"] + &-slide {
+	&-slide {
 		width: 8px;
 		height: 8px;
 		display: inline-block;
@@ -20,7 +19,7 @@
 		cursor: pointer;
 	}
 
-	input[type="checkbox"]:checked + &-slide {
+	&-slide.active {
 		background: $bg-slide;
 	}
 }

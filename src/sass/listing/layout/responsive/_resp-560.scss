@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 695px){
 	.filter__result {
 		&-flat {
 			flex-wrap: wrap;
@@ -8,74 +8,17 @@
 		}
 
 		&-finance {
-			position: static;
-			text-align: start;
-			width: 100%;
-		}
-		
-		&-btn {
-			display: inline-flex;
-			padding-left: 14px;
-    		margin: 22px 19px 0 0;
-			
-			&:after {
-    			transform: translateY(35%);
-    		}
-
-    		&-social {
-    			margin-left: 8px;
-    			height: 34px;
-    			line-height: 34px;
-    		}
-
-    		&-phone {
-    			height: 34px;
-    			line-height: 34px;
-    		}
-
-
+			width: 320px;
+			margin: 0 auto;
 		}
 
-		&-slides {
-			position: absolute;
-			bottom: 38px;
-			left: 50%;
-			transform: translateX(-50%);
+		&-photo {
+			margin: 0 auto;
 		}
 
-		&-price-cource {
-			display: none;
-		}
-
-		&-address {
-			padding-top: 30px;
-		}
-
-		&-price {
-			display: inline-flex;
-    		width: 50%;
-		}
-
-		&-change {
-			display: inline-flex;
-    		width: 46%;
-    		padding: 6px 0 0px;
-		}
-
-		&-contacts {
-			display: inline-flex;
-			margin: 22px 0 87px;
-			float: right;
-		}
-
-	}
-
-	.filter {
-
-		&__results-other {
-		    position: absolute;
-			right: 20px;
-			bottom: 38px;
-		}
+		&-description {
+			margin: 0 auto;
+			flex-basis: 320px;
+		}	
 	}
 }
