@@ -6,6 +6,12 @@
 		padding-top: 20px; 
 		font-weight: 600;
 		letter-spacing: 0.25px;
+		cursor: pointer;
+		display: inline-flex;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	&__title {

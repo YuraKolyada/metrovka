@@ -54,8 +54,9 @@
 	}
 
 	&__item {
-		flex-basis: ($width-slide/844px)*100%;
+		width: ($width-slide/844px)*100%;
 		min-width: 202px;
+		margin-right: 16px;
 	}
 }
 
@@ -74,12 +75,17 @@
 		min-width: 282px;
 	}
 
-	&__container {
+	&__item {
 		display: flex;
 		justify-content: flex-end;
-		flex-wrap: wrap;
 		padding-bottom: 39px;
+		flex: 1 100%;
 	}
+
+	&__items {
+		width: 200%;
+	}
+
 
 	&__slides {
 		display: flex;

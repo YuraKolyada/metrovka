@@ -4,6 +4,12 @@
 		color: $color-address; 
 		font-size: 1rem;
 		line-height: 22px;
+		cursor: pointer;
+		display: inline;
+		transition-duration: .25s;
+		&:hover {
+			border-bottom: 1px solid $color-address;
+		}
 		
 	}
 	
@@ -79,10 +85,21 @@
 		&--last {
 			padding-bottom: 7px;
 		}
+		
+		&:hover {
+			.filter__results-section {
+				border-bottom: 1px solid #979797;
+			}
+		}
+	}
+
+	&-other-right {
+		@extend .filter__results-other;
 	}
 
 	&-section {
 		color: #979797;
+		transition: all 0.5s;
 	}
 
 	&-section-name {
@@ -93,5 +110,9 @@
 	&-section-icon {
 		@include sprite($-group-9-copy-7);
 		margin-left: 20px;
+		&.rotate {
+			transform: rotate(180deg);
+			margin: 0 5px 0;
+		}
 	}
 }

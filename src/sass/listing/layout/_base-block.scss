@@ -21,6 +21,8 @@
 
 	&__result-description-wrap {
 		display: flex;
+		justify-content: space-between;
+		width: 100%;
 	}
 
 	&__result-photo {

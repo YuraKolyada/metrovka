@@ -1,4 +1,4 @@
-var btnModal = document.getElementsByClassName('header__btn-replace-ad');
+var btnModal = document.getElementsByClassName('contacts-list__btn');
 var overlay = document.getElementsByClassName('modal__overlay');
 var modalName = document.getElementsByClassName('modal');
 var close = document.getElementsByClassName('modal__close');

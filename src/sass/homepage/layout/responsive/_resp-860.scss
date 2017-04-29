@@ -182,12 +182,13 @@
 	.social {
 		padding: 21px 0;
 
-		&__container {
+		&__item {
 			padding-bottom: 28px;
 		}
 
 		&__text {
 			padding-bottom: 32px;
+			flex-wrap: wrap;
 		}
 
 		&__info-title {
