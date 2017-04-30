@@ -7,17 +7,19 @@ https://yurakolyada.github.io/metrovka/prod/html/homepage.html
 
 readme slider:
 структура html:
+```html
+<div class="j-slider">
+	<div class="j-slider__items">
+		<div class="j-slider__item">1</div>
+		<div class="j-slider__item">2</div>
+		<div class="j-slider__item">3</div>
+	</div>
+</div>
+```
+Також до даного слайдера написаний свій власний набір стилів(файл _js-slider.scss).
+Налаштування слайдера по default
 
-//<div class="j-slider">
-//	<div class="j-slider__items">
-//		<div class="j-slider__item">1</div>
-//		<div class="j-slider__item">2</div>
-//		<div class="j-slider__item">3</div>
-//	</div>
-//</div>
-
-Також до даного слайдера написаний свій власний набір стилів.
-Налаштування слайдера по default 
+```javascript
 var settings = {
 	infinite: true,    
 	index: 0,          
@@ -32,11 +34,13 @@ var settings = {
 	classNameArrowRight: '',
 	classNameArrowLeft: ''
 };
+```
 
 arrows and pagination буде створено автоматично, якщо дані опції будуть true.
 также єсть опції,{ classNameDot, classNameArrowRight, classNameArrowLeft }, якщо в вас вже створені унікальні pagination і arrows, то ви можете відповідно назначить їм свої класи і застосувати до свого слайдера.
 
 приклад застосування сладера:
+```javascript
 
 $('.last-ads__slider').slider({
 	slidesVisible: 4,
@@ -56,4 +60,4 @@ $('.filter__result-slider').slider({
 	classNameArrowRight: 'filter__results-other-right',
 	autoplay: false
 });
-
+```
