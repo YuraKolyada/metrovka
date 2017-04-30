@@ -442,7 +442,11 @@ img {
   text-align: center;
   border-top: 2px solid #D8D8D8;
   padding: 6px;
-  font-weight: 600; }
+  font-weight: 600;
+  transition: all 0.25s; }
+  .best-home__price-offers:hover {
+    border-top-color: #30AE63;
+    color: #30AE63; }
 
 .last-ads__wrap {
   padding: 20px 23px 27px; }
@@ -474,7 +478,12 @@ img {
   text-align: center;
   border-top: 2px solid #D8D8D8;
   padding: 6px;
-  font-weight: 600; }
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s; }
+  .last-ads__offers:hover {
+    border-top-color: #30AE63;
+    color: #30AE63; }
 
 .social__title {
   text-align: center; }
@@ -591,6 +600,8 @@ input[type="checkbox"] + .social__slide {
     line-height: 1.5;
     padding-bottom: 20px;
     width: calc(100% - 15px); }
+    .blogs__item__title:hover {
+      text-decoration: underline; }
   .blogs__item__time:before {
     content: '';
     height: 2px;
@@ -612,7 +623,11 @@ input[type="checkbox"] + .social__slide {
     border-top: 2px solid #D8D8D8;
     cursor: pointer;
     padding: 6px 0;
-    font-weight: 600; }
+    font-weight: 600;
+    transition: all 0.25s; }
+    .blogs__page:hover {
+      border-top-color: #30AE63;
+      color: #30AE63; }
 
 .header__btn-sign-in, .header__btn-replace-ad {
   color: #fff;
@@ -964,7 +979,8 @@ input[type="checkbox"] + .social__slide {
 
 .dropdown__option:hover {
   background: #30AE63;
-  transition: background .25s; }
+  transition: background .25s;
+  color: #fff; }
 
 .dropdown__option-selected:hover {
   cursor: pointer; }
