@@ -18,6 +18,11 @@
 		border-top: 2px solid $border-color;
 		padding: 6px;
 		font-weight: 600;
+		transition: all 0.25s;
+		&:hover {
+			border-top-color: $border-open;
+			color: $border-open;
+		}
 	}
 }
 

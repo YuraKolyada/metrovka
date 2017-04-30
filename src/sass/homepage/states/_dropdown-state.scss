@@ -2,6 +2,7 @@
 	&__option:hover {
 		background: $border-open;
 		transition: background .25s;
+		color: #fff;
 	}
 	&__option-selected:hover {
 		cursor: pointer;

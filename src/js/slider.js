@@ -17,13 +17,13 @@
 			defaultClassNameByArrowLeft = 'j-slider__left',
 			defaultClassNameByArrowRight = 'j-slider__right',
 			defaultClassNameByDot = (pagination) ? '.j-slider__dot' : '.' + classNameDot,
-			$dot,
 			len = Math.ceil((lengthSlide - slidesVisible) / slidesToScroll),
 			allWidthProc = 100 * (lengthSlide / slidesVisible),
+			$height = sliderItem.outerHeight(true),
+			$dot,
 			itemWidth,
 			totalLeft,
-			allWidth,
-			$height = sliderItem.outerHeight(true);
+			allWidth;
 
 		if(classNameDot){
 			$dot = $element.parent().find(defaultClassNameByDot);}
@@ -62,6 +62,21 @@
 
 			}
 
+			paginationClickDot() {
+				let self = this;
+				if(!classNameDot){
+					$dot = $element.find(defaultClassNameByDot)};
+
+				$dot.on('click', function(){
+					index = $(this).data().slide;
+					self.paginationSlide(index);
+					let positionLeft = -index * slidesToScroll * itemWidth;
+					positionLeft = (positionLeft < -totalLeft) ? -totalLeft : positionLeft;
+					sliderItems.animate({'left': positionLeft + 'px'}, 1000);
+				});
+			}
+
+
 			slideAutoplay() {
 				let _this = this,
 					idTimer = setTimer();
@@ -99,7 +114,7 @@
 				if(settings.infinite && prev === 0 && signLeft !== -1){
 					prev = -totalLeft;
 					index = len;
-					duration = (lengthSlide - slidesVisible)*500;
+					duration = (lengthSlide - slidesVisible) * 750;
 				}
 
 				sliderItems.animate({'left': prev + 'px'}, duration);
@@ -113,13 +128,12 @@
 					next = Math.max(-totalLeft, position - (slidesToScroll * itemWidth));
 				index = (index <= len) ? index + 1 : len;
 
-				if(settings.infinite && index === len + 1){
+				if(settings.infinite && next === -totalLeft && index === (len + 1) ){
 					next = index = 0;
-					duration = (lengthSlide - slidesVisible) * 500;
+					duration = (lengthSlide - slidesVisible) * 750;
 				}
 
 				sliderItems.animate({'left': next + 'px'}, duration);
-
 				this.paginationSlide(index);
 			};
 
@@ -143,20 +157,6 @@
 
 			    $element.append(dots);
 
-			}
-
-			paginationClickDot() {
-				let self = this;
-				if(!classNameDot){
-					$dot = $element.find(defaultClassNameByDot)};
-
-				$dot.on('click', function(){
-					index = $(this).data().slide;
-					self.paginationSlide(index);
-					let positionLeft = -index * slidesToScroll * itemWidth;
-					positionLeft = (positionLeft < -totalLeft) ? -totalLeft : positionLeft;
-					sliderItems.animate({'left': positionLeft + 'px'}, 1000);
-				});
 			}
 
 			arrowsCreate() {
@@ -190,6 +190,7 @@
 				$height = sliderItem.outerHeight(true);
 				$element.css('min-height', $height + 'px');
 				itemWidth = sliderItem.outerWidth(true);
+				totalLeft = (lengthSlide - slidesVisible) * itemWidth;
 			}
 
 			swipe() {
@@ -249,10 +250,10 @@
 				sliderShow.findArrowsClick();
 			};
 
-
-			if(this.newSettings.swipeAble){
-				sliderShow.swipe();
-			};
+			// -----erorr!!!------
+			// if(this.newSettings.swipeAble){
+			// 	sliderShow.swipe();
+			// };
 
 			
 			if(this.newSettings.autoplay){
@@ -274,7 +275,7 @@ $('.social__slider').slider({
 	index: 1,
 	pagination: false,
 	classNameDot: 'social__slide',
-	autoplaySpeed: 15000
+	autoplaySpeed: 7500
 });
 
 $('.last-ads__slider').slider({

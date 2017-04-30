@@ -74,6 +74,9 @@
 		line-height: 1.5;
 		padding-bottom: 20px;
 		width: calc(#{'100% - 15px'});
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	&__item__time {
@@ -100,6 +103,11 @@
 		cursor: pointer;
 		padding: 6px 0;
 		font-weight: 600;
+		transition: all 0.25s;
+		&:hover {
+			border-top-color: $border-open;
+			color: $border-open;
+		}
 	}
 	
 }
