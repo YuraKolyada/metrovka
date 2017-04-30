@@ -13,7 +13,7 @@ gulp.task('server',['html', 'sass', 'js'], function(){
 	browser.init({
 		server: {
 			baseDir: './prod',
-			index: 'html/listing.html'
+			index: 'html/homepage.html'
 		}
 	});
     gulp.watch('./src/sass/**/**/**/*.scss', ['sass']);

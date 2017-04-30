@@ -92,7 +92,8 @@ function closeMenu() {
 			allWidthProc = 100 * (lengthSlide / slidesVisible),
 			itemWidth,
 			totalLeft,
-			allWidth;
+			allWidth,
+			$height = sliderItem.outerHeight(true);
 
 		if(classNameDot){
 			$dot = $element.parent().find(defaultClassNameByDot);}
@@ -107,8 +108,8 @@ function closeMenu() {
 				index = ind;
 				this.paginationSlide(index);
 
-				if(!itemWidth){
-					itemWidth = sliderItem.outerWidth(true);
+				if(!itemWidth || !$height){
+					this.resize();
 				}
 
 				let positionLeft = -index * slidesToScroll * itemWidth;
@@ -186,7 +187,7 @@ function closeMenu() {
 					next = index = 0;
 					duration = (lengthSlide - slidesVisible) * 500;
 				}
-				console.log('hi');
+
 				sliderItems.animate({'left': next + 'px'}, duration);
 
 				this.paginationSlide(index);
@@ -256,7 +257,7 @@ function closeMenu() {
 			}
 
 			resize() {
-				let $height = sliderItem.outerHeight(true);
+				$height = sliderItem.outerHeight(true);
 				$element.css('min-height', $height + 'px');
 				itemWidth = sliderItem.outerWidth(true);
 			}
@@ -268,7 +269,7 @@ function closeMenu() {
 		}
 
 		window.onload = function(){
-			let $height = sliderItem.outerHeight(true);
+			$height = sliderItem.outerHeight(true);
 			itemWidth = sliderItem.outerWidth(true);
 			totalLeft = (lengthSlide - slidesVisible) * itemWidth;
 			allWidth = lengthSlide * itemWidth;
@@ -302,14 +303,14 @@ function closeMenu() {
 
 			var sliderShow = new SliderShow($(this), this.newSettings);
 
-			sliderShow.slidesVisible();
-
 			if(this.newSettings.pagination){
 				sliderShow.paginationCreate();
 				sliderShow.paginationClickDot();
 			} else if(this.newSettings.classNameDot){
 				sliderShow.clickByDot();
 			};
+
+			sliderShow.slidesVisible();
 
 			if(this.newSettings.arrows){
 				sliderShow.arrowsCreate();
@@ -355,7 +356,7 @@ $('.last-ads__slider').slider({
 });
 
 
-let x = $('.filter__result-slider').slider({
+$('.filter__result-slider').slider({
 	index: 0,
 	pagination: false,
 	classNameDot: 'filter__result-slide',
@@ -364,5 +365,3 @@ let x = $('.filter__result-slider').slider({
 	classNameArrowRight: 'filter__results-other-right',
 	autoplay: false
 });
-
-console.log(x);
