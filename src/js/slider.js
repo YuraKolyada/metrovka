@@ -62,6 +62,21 @@
 
 			}
 
+			paginationClickDot() {
+				let self = this;
+				if(!classNameDot){
+					$dot = $element.find(defaultClassNameByDot)};
+
+				$dot.on('click', function(){
+					index = $(this).data().slide;
+					self.paginationSlide(index);
+					let positionLeft = -index * slidesToScroll * itemWidth;
+					positionLeft = (positionLeft < -totalLeft) ? -totalLeft : positionLeft;
+					sliderItems.animate({'left': positionLeft + 'px'}, 1000);
+				});
+			}
+
+
 			slideAutoplay() {
 				let _this = this,
 					idTimer = setTimer();
@@ -142,20 +157,6 @@
 
 			    $element.append(dots);
 
-			}
-
-			paginationClickDot() {
-				let self = this;
-				if(!classNameDot){
-					$dot = $element.find(defaultClassNameByDot)};
-
-				$dot.on('click', function(){
-					index = $(this).data().slide;
-					self.paginationSlide(index);
-					let positionLeft = -index * slidesToScroll * itemWidth;
-					positionLeft = (positionLeft < -totalLeft) ? -totalLeft : positionLeft;
-					sliderItems.animate({'left': positionLeft + 'px'}, 1000);
-				});
 			}
 
 			arrowsCreate() {
