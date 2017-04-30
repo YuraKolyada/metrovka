@@ -4,6 +4,18 @@ https://yurakolyada.github.io/metrovka/prod/html/listing.html
 https://yurakolyada.github.io/metrovka/prod/html/homepage.html
 
 
+
+readme slider:
+структура html:
+
+<div class="j-slider">
+	<div class="j-slider__items">
+		<div class="j-slider__item">1</div>
+		<div class="j-slider__item">2</div>
+		<div class="j-slider__item">3</div>
+	</div>
+</div>
+
 Також до даного слайдера написаний свій власний набір стилів.
 Налаштування слайдера по default 
 var settings = {
@@ -44,3 +56,4 @@ $('.filter__result-slider').slider({
 	classNameArrowRight: 'filter__results-other-right',
 	autoplay: false
 });
+
