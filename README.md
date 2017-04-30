@@ -6,7 +6,7 @@ https://yurakolyada.github.io/metrovka/prod/html/homepage.html
 
 
 readme slider:
----
+
 структура html:
 ```html
 <div class="classNameSlider j-slider">
@@ -18,14 +18,13 @@ readme slider:
 </div>
 ```
 Також до даного слайдера написаний свій власний набір стилів(файл `_js-slider.scss`).
----
+
 link scss: https://github.com/YuraKolyada/metrovka/blob/master/src/sass/homepage/modules/_js-slider.scss
----
+
 Класу `j-slider__item` бажано задавати ширину.
----
+
 `Сам слайдер буде визначати ширину по контейнеру` в якому він буде поміщений(наприклад по html в нього ширина буде на весь браузер)
 
----
 Налаштування слайдера по default
 
 ```javascript
@@ -44,16 +43,16 @@ var settings = {
 	classNameArrowLeft: ''
 };
 ```
----
+
 arrows and pagination буде створено автоматично, якщо дані опції будуть true.
 также єсть опції,{ classNameDot, classNameArrowRight, classNameArrowLeft }, якщо в вас вже створені унікальні pagination і arrows, то ви можете відповідно назначить їм свої класи і застосувати до свого слайдера.
----
+
 приклад застосування сладера:
----
+
 + потрібно підключити jquery
----
+
 cdn: https://code.jquery.com/jquery-3.2.1.min.js
----
+
 ```javascript
 
 $('.last-ads__slider').slider({
